@@ -36,6 +36,9 @@ img {
     --fixed-header-height: 4.5rem;
 }
 
+body.stop-transition .nav_menu {
+    transition: none !important;
+}
 
 /* MOBILE FIRST STYLE */
 /* Header */
