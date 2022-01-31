@@ -39,7 +39,9 @@ img {
 
 /* MOBILE FIRST STYLE */
 /* Header */
-
+header {
+    height: var(--fixed-header-height);
+}
 .nav {
     height: var(--fixed-header-height);
     width: 100%;
