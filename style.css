@@ -39,25 +39,25 @@ img {
 
 /* MOBILE FIRST STYLE */
 /* Header */
-header {
-    height: var(--fixed-header-height);
-}
+
 .nav {
     height: var(--fixed-header-height);
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #fff;
     border-bottom: 1px solid #DADADA;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .logo {
     height: 100%;
-    order: 1;
 }
 .nav_menu {
-    order: 3;
-    position: fixed;
-    width: 90%;
+    position: absolute;
+    width: 300px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -94,7 +94,6 @@ header {
 /* Hamburger */
 .hamburger {
     padding: 15px;
-    order: 2;
 }
 .hamburger-box {
     width: 40px;
