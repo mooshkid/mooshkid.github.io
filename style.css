@@ -36,6 +36,7 @@ img {
     --fixed-header-height: 4.5rem;
 }
 
+/* DISABLE CSS TRANSITION ON MEDIA QUERY */
 body.stop-transition .nav_menu {
     transition: none !important;
 }
@@ -166,6 +167,7 @@ header {
 /* Tablet Media Queries */
 @media screen and (min-width: 768px) {
     .nav_menu {
+        position: relative;
         width: auto;
         height: 100%;
         flex-direction: row;
