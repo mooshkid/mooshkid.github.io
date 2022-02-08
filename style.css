@@ -57,6 +57,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    transition: top 0.3s;
 }
 .logo {
     height: 100%;
