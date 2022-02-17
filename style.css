@@ -67,6 +67,7 @@ header {
     width: 300px;
     height: 100vh;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
@@ -155,13 +156,18 @@ header {
 }
 
 /* Main */
+
+/* Hero Section */
 .hero {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.hero_text {
     text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
-.hero .hero_text {
-    padding: 1em 0;
-}
-.hero h1 {
+.hero_text h1 {
     margin-bottom: 20px;
 }
 
@@ -178,6 +184,9 @@ header {
     }
     .hamburger {
         display: none;
+    }
+    .hero {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
