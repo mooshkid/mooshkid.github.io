@@ -208,13 +208,18 @@ header {
 }
 .title-section {
     margin-bottom: 2rem;
+    color: white;
+    text-shadow: 2px 2px 5px #484848;
 }
 .title-section::after {
     content: "";
     display: block;
-    border-bottom: 5px solid orchid;
+    border-bottom: 10px solid orchid;
     width: 5rem;
-    bottom: -1rem;
+    position: relative;
+    left: 1rem;
+    bottom: 0.6rem;
+    z-index: -1;
 }
 
 /* Tablet Media Queries */
