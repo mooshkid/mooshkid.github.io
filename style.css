@@ -222,6 +222,8 @@ p {
 }
 .profile-picture img {
     height: 300px;
+    width: 300px;
+    object-fit: cover;
     border-radius: 50%;
 }
 .title-section {
@@ -265,5 +267,11 @@ p {
 @media screen and (min-width: 1024px) {
     .row {
         display: flex;
+    }
+    .profile-picture {
+        flex: 1;
+    }
+    .row {
+        flex: 2;
     }
 }
