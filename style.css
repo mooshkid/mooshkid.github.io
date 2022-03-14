@@ -33,7 +33,8 @@ img {
 
 /* CSS VARIABLES */
 :root {
-    --primary-color: #335eea;
+    --primary-color: #335eea; /*#447ef5*/
+    --secondary-color: #547fc8;
     --link-color:background-color: #506690;
     --button-hover-color: #2b50c7;
     --fixed-header-height: 4.5rem;
@@ -179,6 +180,7 @@ p {
 }
 section {
     position: relative;
+    overflow: auto;
 }
 /* Hero Section */
 .hero {
@@ -195,7 +197,7 @@ section {
     padding: 5rem 0;
 }
 .hero_text span {
-    background: -webkit-linear-gradient(45deg, var(--primary-color), #5dff63);
+    background: -webkit-linear-gradient(45deg, #335eea, #5dff63);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -217,16 +219,19 @@ section {
 .row {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 3rem;
 }
 .profile-picture {
+    text-align: center;
 }
 .profile-picture img {
     height: 300px;
     width: 300px;
     object-fit: cover;
     border-radius: 50%;
+}
+.col {
+    padding: 1rem 0;
 }
 .title-section {
     margin-bottom: 2rem;
@@ -271,6 +276,10 @@ section {
     }
     .col {
         flex: 1;
+    }
+    .editorial {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 }
 
