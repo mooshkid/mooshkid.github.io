@@ -207,21 +207,19 @@ section {
 
 /* About Section */
 .about {
-    display: flex;
-    flex-direction: column;
     background: turquoise;
     /*clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);*/
-    height: 100vh;
 }
 .container {
     max-width: 90%;
-    margin: 5rem auto;
+    margin: 0 auto;
+}
+.row {
+    padding: 5rem 0;
 }
 .profile-picture {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 3rem;
+    text-align: center;
 }
 .profile-picture img {
     height: 300px;
@@ -279,6 +277,9 @@ section {
     }
 }
 
+
+
+/* FIX WAVE CSS HERE */
 
 .editorial {
     display: block;
