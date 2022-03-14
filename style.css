@@ -266,6 +266,12 @@ section {
     .row {
         flex-direction: row;
     }
+    .profile-picture {
+        flex: 1;
+    }
+    .col {
+        flex: 1;
+    }
 }
 
 /*Desktop Media Queries */
