@@ -212,14 +212,15 @@ section {
 }
 .container {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 5rem auto;
 }
 .row {
-    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
 }
 .profile-picture {
-    margin-bottom: 3rem;
-    text-align: center;
 }
 .profile-picture img {
     height: 300px;
@@ -262,19 +263,14 @@ section {
     .hero {
         grid-template-columns: repeat(2, 1fr);
     }
+    .row {
+        flex-direction: row;
+    }
 }
 
 /*Desktop Media Queries */
 @media screen and (min-width: 1024px) {
-    .row {
-        display: flex;
-    }
-    .profile-picture {
-        flex: 1;
-    }
-    .col {
-        flex: 1;
-    }
+
 }
 
 
