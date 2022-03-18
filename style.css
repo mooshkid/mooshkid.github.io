@@ -181,7 +181,7 @@ p {
 }
 section {
     position: relative;
-    overflow: auto;
+    overflow: hidden;
 }
 /* Hero Section */
 .hero {
