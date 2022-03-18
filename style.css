@@ -185,11 +185,12 @@ section {
 }
 /* Hero Section */
 .hero {
-    background-image: url(assets/black_slark.png);
+    background-image: url(assets/tidehunter_bg.jpg);
     background-size: cover;
-    background-size: 7rem;
+    background-position: 40%;
+    //background-size: 7rem;
     background-repeat: no-repeat;
-    animation: vroom 5s ease infinite ;
+    //animation: vroom 5s ease infinite ;
 }
 @keyframes vroom {
     0% {

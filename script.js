@@ -134,15 +134,6 @@ $(".minion").each(function(i, cloud) {
 
 firstRun = 1
 
-$("#play").click(function() {
-  tl && tl.play();
-});
-
-$("#pause").click(function() {
-  tl = TimelineLite.exportRoot();
-  tl.pause();
-});
-
 $(window).resize(function() {
   vw = window.innerWidth;
   vh = window.innerHeight;
