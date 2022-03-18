@@ -38,7 +38,7 @@ function stopResponsiveTransition() {
     });
 }
 
-// GSAP BUBBLE ANIMATIONS
+// BUBBLE ANIMATIONS
 gsap.registerPlugin(MotionPathPlugin);
 let bubble = document.querySelectorAll(".bubbles");
 let headBubbles = document.querySelectorAll(".headBubbles");
@@ -118,16 +118,58 @@ tl4
 	.to(".bubble4", { opacity: 0 })
 	.to(".burst4", { opacity: 1 }, "-=.5");
 
-TweenMax.to(headBubbles, 2, {
-	opacity: 0.3,
-	stagger: { amount: 1 },
-	ease: "back.out(4)",
-	yoyo: true,
-	repeat: -1
+
+
+// SLARK MINIONS
+
+var tl = null;
+var vw = window.innerWidth;
+var vh = window.innerHeight;
+
+var firstRun = -4;
+
+$(".minion").each(function(i, cloud) {
+  animateCloud(cloud);
 });
 
-TweenMax.to("#water", {
-	fill: "#64eafc",
-	repeat: -1,
-	yoyo: true
+firstRun = 1
+
+$("#play").click(function() {
+  tl && tl.play();
 });
+
+$("#pause").click(function() {
+  tl = TimelineLite.exportRoot();
+  tl.pause();
+});
+
+$(window).resize(function() {
+  vw = window.innerWidth;
+  vh = window.innerHeight;
+});
+
+function animateCloud(cloud) {
+  
+  var height = cloud.offsetHeight * 0.5;
+  
+  TweenLite.set(cloud, {
+    scale: random(0.5, 5),
+    xPercent: -100,
+    yPercent: -50,
+    x: vw,
+    y: random(height, vh - height)
+  });
+  
+  TweenLite.to(cloud, random(1, 3), {
+    x: -vw,
+    xPercent: 0,
+    delay: random(2) * firstRun,
+    onComplete: animateCloud,
+    onCompleteParams: [cloud]
+  });
+}
+
+function random(min, max) {
+  if (max == null) { max = min; min = 0; }
+  return Math.random() * (max - min) + min;
+}
