@@ -38,6 +38,7 @@ img {
     --link-color:background-color: #506690;
     --button-hover-color: #2b50c7;
     --fixed-header-height: 4.5rem;
+    --pink-color: #ff1f87;
 }
 
 /* DISABLE CSS TRANSITION ON MEDIA QUERY */
@@ -183,15 +184,17 @@ section {
     position: relative;
     overflow: hidden;
 }
+
 /* Hero Section */
+/*
 .hero {
     background-image: url(assets/tidehunter_bg.jpg);
     background-size: cover;
     background-position: 40%;
-    //background-size: 7rem;
     background-repeat: no-repeat;
-    //animation: vroom 5s ease infinite ;
+    animation: vroom 5s ease infinite;
 }
+*/
 @keyframes vroom {
     0% {
         background-position: -200% center;
@@ -209,7 +212,6 @@ section {
         background-position: 1000% 1000%;
     }
 }
-
 .hero_content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);    
@@ -306,7 +308,6 @@ section {
     float:left;
     background-color: transparent;
 }
-  
 .wave1 > use {
     animation: left-wave 10s linear infinite;
 }
@@ -336,6 +337,17 @@ section {
     }
 }
 
+/* Skills Section */
+.skills {
+    background: #4e5da6;
+    padding: 7rem 0;
+}
+
+/* Projects Section */
+.projects {
+    background: #ff1f87;
+    padding: 7rem 0;
+}
 
 /* Tablet Media Queries */
 @media screen and (min-width: 768px) {
@@ -369,6 +381,26 @@ section {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+}
+
+/* Contact Section*/
+.contact {
+    background: turquoise;
+    padding: 7rem 0;
+}
+
+/* Footer */
+footer {
+    padding: 3rem 0;
+    background: url(assets/tidehunter_bg.jpg);
+    background-position: center 100%;
+    background-size: contain;
+}
+.copyright {
+    text-align: center;
+    color: seashell;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /*Desktop Media Queries */
