@@ -169,8 +169,8 @@ function random(min, max) {
 $(window).on("load", function() {
 
     var tl = new TimelineMax({repeat:-1});
-    tl.to("#footer", 20, {
-        backgroundPosition: "1301px 0px",
+    tl.to("", 20, {
+        backgroundPosition: "1501px 0px",
         force3D:true,
         rotation:0.01,
         z:0.01,
