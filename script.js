@@ -169,16 +169,8 @@ function random(min, max) {
 $(window).on("load", function() {
 
     var tl = new TimelineMax({repeat:-1});
-<<<<<<< HEAD
     tl.to(".tidehunter", 20, {
         backgroundPosition: "1920px bottom",
-=======
-    tl.to("footer", 20, {
-        backgroundPosition: "1501px 0px",
-        force3D:true,
-        rotation:0.01,
-        z:0.01,
->>>>>>> d85aea994b91f89074bfc94b697a39304e1f7e9f
         autoRound:false,
         ease: Linear.easeNone
     });
