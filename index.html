@@ -138,9 +138,29 @@
                     </svg>
                 </div>
             </section>
-            <section class="skills" id="skills">
+            <section class="skills">
                 <div class="container">
                     <h2 class="title-section">Skills</h2>
+                    <div class="tab">
+                        <button class="tablinks" onclick="clickTab(event, 'skills')" id="defaultOpen">Skills</button>
+                        <button class="tablinks" onclick="clickTab(event, 'education')">Education</button>
+                        <button class="tablinks" onclick="clickTab(event, 'hobbies')">Hobbies</button>
+                    </div>
+                    <!-- id=skills on menu needs to be done something about-->
+                    <div id="skills" class="tabcontent">
+                        <h3>London</h3>
+                        <p>London is the capital city of England.</p>
+                      </div>
+                      
+                      <div id="education" class="tabcontent">
+                        <h3>Paris</h3>
+                        <p>Paris is the capital of France.</p> 
+                      </div>
+                      
+                      <div id="hobbies" class="tabcontent">
+                        <h3>Tokyo</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                    </div>
                 </div>  
             </section>
             <section class="projects" id="projects">
@@ -154,7 +174,11 @@
                 </div> 
             </section>
         </main>
-        <footer id="footer">               
+        <footer id="footer">     
+            <div class="footer_bg">
+                <div class="tentacles"></div>
+                <div class="tidehunter"></div>
+            </div>          
             <div class="socials">
                 <a href="https://youtube.com/mooshkid25" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
@@ -168,10 +192,6 @@
                 <a href="mailto:mooshkid@gmail.com" target="_blank">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
-            </div>
-            <div class="footer_bg">
-                <div class="tentacles"></div>
-                <div class="tidehunter"></div>
             </div>
             <p class="copyright">MOOSHKID © 2022</p>
         </footer>
