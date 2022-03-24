@@ -365,8 +365,8 @@ footer {
     height: 100%;
     position: relative;
 }
-.seaweed {
-    background: url(assets/tidehunter_bg.jpg) repeat-x 0 bottom transparent;
+.tidehunter {
+    background: url(assets/tidehunter_full.png) repeat-x 0 bottom transparent;
     position: absolute;
     background-size: contain;
     bottom: 0;
@@ -380,13 +380,17 @@ footer {
     justify-content: center;
     margin-bottom: 2rem;
     gap: 1rem;
+
 }
 .socials a {
     font-size: 2rem;
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px #000;
 }
 .copyright {
     text-align: center;
-    color: seashell;
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px #000;
     font-size: 1rem;
     font-weight: 400;
 }

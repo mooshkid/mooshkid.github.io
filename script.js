@@ -169,11 +169,8 @@ function random(min, max) {
 $(window).on("load", function() {
 
     var tl = new TimelineMax({repeat:-1});
-    tl.to("", 20, {
-        backgroundPosition: "1501px 0px",
-        force3D:true,
-        rotation:0.01,
-        z:0.01,
+    tl.to(".tidehunter", 20, {
+        backgroundPosition: "1920px bottom",
         autoRound:false,
         ease: Linear.easeNone
     });
