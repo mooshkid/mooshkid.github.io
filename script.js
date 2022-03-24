@@ -174,5 +174,12 @@ $(window).on("load", function() {
         autoRound:false,
         ease: Linear.easeNone
     });
+
+    var tl2 = new TimelineMax({repeat:-1});
+    tl2.to(".tentacles", 200, {
+        backgroundPosition: "5000px bottom",
+        autoRound:false,
+        ease: Linear.easeNone
+    });
     return
 });
