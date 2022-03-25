@@ -382,6 +382,7 @@ section {
     font-weight: 700;
     font-family: "Comfortaa", sans-serif;
     color: white;
+    text-shadow: 2px 2px 5px #484848;
     background-color: inherit;
     float: left;
     border: none;
@@ -390,25 +391,38 @@ section {
     padding: 1rem 2rem 1rem 0;
     transition: 0.3s;
 }
-.tab button
-.tab button:hover {
-    color: var(--primary-color);
+.tablinks:hover {
+    color: var(--primary-color);  /*fix later*/
 }
-.tab button.active {
+.tablinks.active {
     color: var(--pink-color);
+    transition: 0.9s;
 }
 .tabcontent {
     display: none;
-    padding-top: 1rem;
+    padding-top: 2rem;
     color: white;
+    animation: fadeUp 0.9s ease-out;
 }
-.skills .active:after {
+@keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(5%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+.tab .active:after {
     content: "";
     display: block;
     border-bottom: 4px solid var(--pink-color);
-    width: 20px;
+    border-radius: 5px;
+    width: 2rem;
     position: relative;
     bottom: -5px;
+    animation: fadeUp 0.9s;
 }
 .skills_row {
     display: flex;
@@ -434,6 +448,16 @@ section {
     font-size: 1rem;
     padding-top: 5px;
     white-space: nowrap;
+}
+.hobbies_list li {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+.hobbies_list i {
+    width: 1rem;
 }
 
 /* Projects Section */
@@ -532,6 +556,9 @@ footer {
     .divider_wave {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
+    .tabcontent {
+        max-width: 36rem;
     }
 }
 
