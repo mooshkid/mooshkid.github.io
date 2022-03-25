@@ -293,7 +293,36 @@ section {
     color: #ffffff;
     text-shadow: 2px 2px 10px var(--secondary-color);
 }
-
+/*Bubbles*/
+.bubble_container {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .bubble_container svg {
+    height: 100%;
+  }
+  
+  .burst1,
+  .burst2,
+  .burst3,
+  .burst4 {
+    opacity: 0;
+  }
+  
+  .bubble1,
+  .bubble2,
+  .bubble3,
+  .bubble4,
+  .bubbles {
+  fill: white;
+  opacity: 0.8;
+}
 /* divider_wave */
 .divider_wave {
     display: block;
@@ -345,6 +374,43 @@ section {
 .skills .title-section::after {
     width: 5rem;
 }
+.tab {
+    overflow: hidden;
+}
+button.tablinks {
+    font-size: 1rem;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1rem 2rem 1rem 0;
+    transition: 0.3s;
+}
+.tab button:hover {
+    color: var(--primary-color);
+}
+.tab button.active {
+    color: var(--pink-color);
+}
+.tabcontent {
+    display: none;
+    padding-top: 1rem;
+    color: white;
+}
+.skills .active:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid var(--pink-color);
+    width: 20px;
+    position: relative;
+    bottom: -5px;
+}
+
 
 /* Projects Section */
 .projects {
@@ -406,6 +472,8 @@ footer {
     text-shadow: 2px 2px 10px #000;
     font-size: 1rem;
     font-weight: 400;
+    z-index: 2;
+    position: relative;
 }
 
 
@@ -446,35 +514,4 @@ footer {
 /*Desktop Media Queries */
 @media screen and (min-width: 1024px) {
 
-}
-
-/*Bubbles*/
-.bubble_container {
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .bubble_container svg {
-    height: 100%;
-  }
-  
-  .burst1,
-  .burst2,
-  .burst3,
-  .burst4 {
-    opacity: 0;
-  }
-  
-  .bubble1,
-  .bubble2,
-  .bubble3,
-  .bubble4,
-  .bubbles {
-  fill: white;
-  opacity: 0.8;
 }
