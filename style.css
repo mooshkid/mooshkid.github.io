@@ -377,12 +377,11 @@ section {
 .tab {
     overflow: hidden;
 }
-button.tablinks {
-    font-size: 1rem;
+.tablinks {
+    font-size: 1.2rem;
+    font-weight: 700;
     font-family: "Comfortaa", sans-serif;
     color: white;
-}
-.tab button {
     background-color: inherit;
     float: left;
     border: none;
@@ -391,6 +390,7 @@ button.tablinks {
     padding: 1rem 2rem 1rem 0;
     transition: 0.3s;
 }
+.tab button
 .tab button:hover {
     color: var(--primary-color);
 }
@@ -410,7 +410,31 @@ button.tablinks {
     position: relative;
     bottom: -5px;
 }
-
+.skills_row {
+    display: flex;
+    justify-content: center;
+}
+.skills_col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 3rem;
+}
+.skills_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skills_item i {
+    font-size: 4rem;
+}
+.skills_name {
+    font-size: 1rem;
+    padding-top: 5px;
+    white-space: nowrap;
+}
 
 /* Projects Section */
 .projects {

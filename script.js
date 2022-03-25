@@ -165,7 +165,7 @@ function random(min, max) {
 }
 
 // SKILLS TAB
-function clickTab(evt, tabName) {
+function clickTab(event, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
   
@@ -183,7 +183,7 @@ function clickTab(evt, tabName) {
   
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
+    event.currentTarget.className += " active";
   }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
