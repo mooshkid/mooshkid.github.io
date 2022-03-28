@@ -164,6 +164,7 @@ function random(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+
 // SKILLS TAB
 function clickTab(event, tabName) {
     // Declare all variables

@@ -365,20 +365,16 @@ section {
         transform: translateX(85px);
     }
 }
-
-/* Skills Section */
-.skills {
-    background: #4e5da6;
-    padding: 7rem 0;
-}
+/* Skills */
 .skills .title-section::after {
     width: 5rem;
 }
 .tab {
     overflow: hidden;
+    z-index: 1;
 }
 .tablinks {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: "Comfortaa", sans-serif;
     color: white;
@@ -424,9 +420,14 @@ section {
     bottom: -5px;
     animation: fadeUp 0.9s;
 }
+.row {
+    margin-bottom: 4rem;
+}
 .skills_row {
     display: flex;
     justify-content: center;
+    max-width: 30rem;
+    margin: 0 auto;
 }
 .skills_col {
     display: flex;
@@ -451,10 +452,10 @@ section {
 }
 .hobbies_list li {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     font-size: 1.2rem;
     font-weight: 700;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 .hobbies_list i {
     width: 1rem;
@@ -462,13 +463,32 @@ section {
 
 /* Projects Section */
 .projects {
-    background: #ff1f87;
+    background: #4579e2;
     padding: 7rem 0;
+    color: #ffffff;
+}
+.projects img {
+    border-radius: 2rem;
+    box-shadow: 2px 2px 10px white;
+    min-height: 20rem;
+    object-fit: cover;
+}
+.project {
+    text-align: right;
+}
+.project:nth-of-type(even) {
+    text-align: left;
+}
+.project_content i {
+    color: #ffffff;
+}
+h3 {
+    font-size: 1.5rem;
 }
 
 /* Contact Section*/
 .contact {
-    background: turquoise;
+    background: #4e5da6;
     padding: 7rem 0;
 }
 
@@ -557,8 +577,20 @@ footer {
         grid-column-start: 1;
         grid-column-end: 3;
     }
+    .tab {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1;
+    }
+    .tablinks {
+        padding-left: 15vw;
+    }
     .tabcontent {
-        max-width: 36rem;
+        flex: 1;
+    }
+    .skills_row {
+        margin: 0;
     }
 }
 
