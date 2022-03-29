@@ -460,7 +460,6 @@ section {
 .projects img {
     border-radius: 30px;
     box-shadow: 2px 2px 10px white;
-    min-height: 20rem;
     object-fit: cover;
 }
 .project {
@@ -593,6 +592,9 @@ footer {
     }
     .skills_row {
         margin: 0;
+    }
+    .project:nth-of-type(even) {
+        flex-direction: row-reverse;
     }
 }
 
