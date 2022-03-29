@@ -189,6 +189,52 @@ function clickTab(event, tabName) {
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 
+// initial animation for .skills_item
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".skills_item", {
+    y: 100, 
+    opacity: 0,
+    stagger: {
+        each: 0.1,
+        from: "random"
+    },
+    scrollTrigger: {
+        trigger: ".tab",
+        start: "top center"
+    }
+});
+// on clicking the skills & hobbies buttons
+$(".skills_button").on("click",
+    function() {
+        gsap.fromTo(".skills_item", {
+            y: 100, 
+            opacity: 0
+        }, {
+            y: 0,
+            opacity: 1,
+            stagger: {
+                each: 0.1,
+                from: "random"
+            }
+        });
+    }
+);
+$(".hobbies_button").on("click", 
+    function() {
+        gsap.fromTo(".hobbies_item", {
+            x: -100,
+            opacity:0,
+        }, {
+            x: 0,
+            opacity: 1,
+            stagger: {
+                each: 0.1,
+                from: "random"
+            }
+        });
+    }
+);
+
 
 // FOOTER ANIMATIONS
 // window load event makes sure image is // loaded before running animation

@@ -13,6 +13,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/MotionPathPlugin.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
         <script src="script.js" defer></script>
     </head>
@@ -137,9 +138,9 @@
                     </div>
                     <div class="row">    
                         <div class="tab">
-                            <button class="tablinks" onclick="clickTab(event, 'skills')" id="defaultOpen">Skills</button>
+                            <button class="tablinks skills_button" onclick="clickTab(event, 'skills')" id="defaultOpen">Skills</button>
                             <!--<button class="tablinks" onclick="clickTab(event, 'education')">Education</button>-->
-                            <button class="tablinks" onclick="clickTab(event, 'hobbies')">Hobbies</button>
+                            <button class="tablinks hobbies_button" onclick="clickTab(event, 'hobbies')">Hobbies</button>
                         </div>
                         <div id="skills" class="tabcontent">
                             <div class="skills_row">
@@ -184,13 +185,13 @@
                         </div>                      
                         <div id="hobbies" class="tabcontent">
                             <ul class="hobbies_list">
-                                <li><i class="fas fa-gamepad"></i>Gaming</li>
-                                <li><i class="fas fa-music"></i>Listening to music</li>
-                                <li><i class="fa-solid fa-tv"></i>Watching Esports & TV</li>                                
-                                <li><i class="fa-brands fa-reddit"></i>Browsing reddit</li>
-                                <li><i class="fa-solid fa-mug-saucer"></i>Drinking coffee</li>
-                                <li><i class="fa-solid fa-pizza-slice"></i>Eating pizza</li>
-                                <li><i class="fa-solid fa-bed"></i>Sleeping</li>
+                                <li class="hobbies_item"><i class="fas fa-gamepad"></i>Gaming</li>
+                                <li class="hobbies_item"><i class="fas fa-music"></i>Listening to music</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-tv"></i>Watching Esports & TV</li>                                
+                                <li class="hobbies_item"><i class="fa-brands fa-reddit"></i>Browsing reddit</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-mug-saucer"></i>Drinking coffee</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-pizza-slice"></i>Eating pizza</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-bed"></i>Sleeping</li>
                             </ul>
                         </div>
                     </div>
