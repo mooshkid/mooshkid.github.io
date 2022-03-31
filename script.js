@@ -119,7 +119,7 @@ tl4
 	.to(".burst4", { opacity: 1 }, "-=.5");
 
 
-// SLARK MINIONS????
+// SLARK MINIONS???? FIXXXXX PLZZZZZZZ
 // https://greensock.com/forums/topic/14818-infinitely-repeating-svg-clouds/
 var tl = null;
 var vw = window.innerWidth;
