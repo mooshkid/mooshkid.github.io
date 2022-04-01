@@ -471,14 +471,17 @@ section {
 .project_content {    
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: center;
     gap: 0.5rem;
 }
-.project_content i {
-    color: #ffffff;
-}
 h3 {
     font-size: 1.5rem;
+}
+.project_link {
+    color: #ffffff;
+    display: flex;
+    gap: 0.5rem;
 }
 .project_tags {
     display: flex;
