@@ -6,15 +6,14 @@
         <meta name="author" content="Masayuki Yamanaka">
         <meta name="description" content="My first attempt at my Mobile First Portfolio">
         <title>Masa's Portfolio Page</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="preload" as="style">
         <link rel="stylesheet" href="style.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>    
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/MotionPathPlugin.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>
+        <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer></script>-->
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -138,9 +137,9 @@
                     </div>
                     <div class="row">    
                         <div class="tab">
-                            <button class="tablinks skills_button" onclick="clickTab(event, 'skills')" id="defaultOpen">Skills</button>
+                            <button class="tablinks skills_button" onclick="clickTab(event, 'skills')" id="skills_tab">Skills</button>
                             <!--<button class="tablinks" onclick="clickTab(event, 'education')">Education</button>-->
-                            <button class="tablinks hobbies_button" onclick="clickTab(event, 'hobbies')">Hobbies</button>
+                            <button class="tablinks hobbies_button" onclick="clickTab(event, 'hobbies')" id="hobbies_tab">Hobbies</button>
                         </div>
                         <div id="skills" class="tabcontent">
                             <div class="skills_row">

@@ -119,8 +119,9 @@ tl4
 	.to(".burst4", { opacity: 1 }, "-=.5");
 
 
-// SLARK MINIONS???? FIXXXXX PLZZZZZZZ
-// https://greensock.com/forums/topic/14818-infinitely-repeating-svg-clouds/
+/*
+SLARK MINIONS???? FIXXXXX PLZZZZZZZ
+https://greensock.com/forums/topic/14818-infinitely-repeating-svg-clouds/
 var tl = null;
 var vw = window.innerWidth;
 var vh = window.innerHeight;
@@ -163,6 +164,7 @@ function random(min, max) {
   if (max == null) { max = min; min = 0; }
   return Math.random() * (max - min) + min;
 }
+*/
 
 
 // SKILLS TAB
@@ -187,7 +189,7 @@ function clickTab(event, tabName) {
     event.currentTarget.className += " active";
   }
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+document.getElementById("skills_tab").click();
 
 // initial animation for .skills_item
 gsap.registerPlugin(ScrollTrigger);
@@ -204,7 +206,8 @@ gsap.from(".skills_item", {
     }
 });
 // on clicking the skills & hobbies buttons
-$(".skills_button").on("click",
+// $(".skills_button").on("click",  <---jquery version
+document.getElementById("skills_tab").addEventListener("click", 
     function() {
         gsap.fromTo(".skills_item", {
             y: 100, 
@@ -219,27 +222,26 @@ $(".skills_button").on("click",
         });
     }
 );
-$(".hobbies_button").on("click", 
-    function() {
-        gsap.fromTo(".hobbies_item", {
-            x: -100,
-            opacity:0,
-        }, {
-            x: 0,
-            opacity: 1,
-            stagger: {
-                each: 0.1,
-                from: "random"
-            }
-        });
-    }
-);
+
+document.getElementById("hobbies_tab").addEventListener("click", function() {
+    gsap.fromTo(".hobbies_item", {
+        x: -100,
+        opacity:0,
+    }, {
+        x: 0,
+        opacity: 1,
+        stagger: {
+            each: 0.1,
+            from: "random"
+        }
+    });
+});
 
 
 // FOOTER ANIMATIONS
 // window load event makes sure image is // loaded before running animation
-$(window).on("load", function() {
-
+//$(window).on("load", function() {
+window.onload = function() {
     var tl = new TimelineMax({repeat:-1});
     tl.to(".tidehunter", 20, {
         backgroundPosition: "1920px bottom",
@@ -254,4 +256,4 @@ $(window).on("load", function() {
         ease: Linear.easeNone
     });
     return
-});
+};
