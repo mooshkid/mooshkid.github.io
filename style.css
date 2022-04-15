@@ -262,6 +262,7 @@ section {
 }
 .profile-picture {
     text-align: center;
+    position: relative;
 }
 .profile-picture img {
     height: 300px;
@@ -296,17 +297,14 @@ section {
 }
 /*Bubbles*/
 .bubble_container {
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
   }
   .bubble_container svg {
     height: 100%;
+    overflow: visible;
   }
   
   .burst1,
