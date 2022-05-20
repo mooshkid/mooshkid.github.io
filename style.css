@@ -39,6 +39,8 @@ img {
     --button-hover-color: #2b50c7;
     --fixed-header-height: 4.5rem;
     --pink-color: #ff1f87;
+    --gradient: linear-gradient(45deg, #335eea, #5dff63);
+    /* linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871); */
 }
 
 /* DISABLE CSS TRANSITION ON MEDIA QUERY */
@@ -58,7 +60,8 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #f3f3f3;
-    border-bottom: 1px solid #DADADA;
+    /* border-bottom: 1px solid #dadada; */
+    box-shadow: 0 0 5px #dadada;
     position: fixed;
     top: 0;
     left: 0;
@@ -227,10 +230,22 @@ section {
     gap: 2rem;
 }
 .hero_text span {
-    background: -webkit-linear-gradient(45deg, #335eea, #5dff63);
+    background: var(--primary-color);
+    background: var(--gradient);
+    background-size: 500%;
+    background-position: left;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: text-animation 2s infinite alternate;
+}
+@keyframes text-animation {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 100%;
+    }
 }
 .hero_content img {
     width: 90%;
@@ -428,12 +443,12 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
 }
 .skills_item i {
     font-size: 4rem;
 }
 .skills_name {
-    padding-top: 5px;
     white-space: nowrap;
 }
 .hobbies_list li {
