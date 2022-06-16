@@ -1,63 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="Masayuki Yamanaka" />
-        <meta
-            name="description"
-            content="My first attempt at my Mobile First Portfolio"
-        />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Masayuki Yamanaka">
+        <meta name="description" content="My first attempt at my Mobile First Portfolio">
         <title>Masa's Portfolio Page</title>
-        <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
-            rel="preload"
-            as="style"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-            rel="stylesheet"
-        />
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
-            defer
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/MotionPathPlugin.js"
-            defer
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"
-            defer
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"
-            defer
-        ></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="preload" as="style">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/MotionPathPlugin.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
         <script src="script.js" defer></script>
     </head>
     <body>
         <header>
             <nav class="nav">
                 <a href="index.html">
-                    <img src="assets/slark_icon.png" alt="logo" class="logo" />
+                    <img src="assets/slark_icon.png" alt="logo" class="logo">
                 </a>
                 <div class="nav_backdrop"></div>
                 <ul class="nav_menu">
-                    <li class="nav_menu_list">
-                        <a class="nav_menu_link" href="#">Home</a>
-                    </li>
-                    <li class="nav_menu_list">
-                        <a class="nav_menu_link" href="#about">About</a>
-                    </li>
-                    <li class="nav_menu_list">
-                        <a class="nav_menu_link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav_menu_list">
-                        <a class="nav_menu_link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav_menu_list"><a class="nav_menu_link" href="#">Home</a></li>
+                    <li class="nav_menu_list"><a class="nav_menu_link" href="#about">About</a></li>
+                    <li class="nav_menu_list"><a class="nav_menu_link" href="#projects">Projects</a></li>
+                    <li class="nav_menu_list"><a class="nav_menu_link" href="#contact">Contact</a></li>
                 </ul>
                 <button class="hamburger">
                     <span class="hamburger-box">
@@ -73,7 +43,7 @@
                         <h1>Hi, I'm <span>Masa</span></h1>
                         <p>I like to sleep and play games</p>
                     </div>
-                    <img src="assets/slark_icon.png" alt="" />
+                    <img src="assets/slark_icon.png" alt="">
                 </div>
                 <!--
                 <div class="minions">
@@ -82,55 +52,31 @@
                     <img class="minion" src="assets/slark_icon.png" alt="">
                 </div>
                 -->
-                <svg
-                    class="divider_wave"
+                <svg class="divider_wave"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28 "
-                    preserveAspectRatio="none"
-                >
+                    preserveAspectRatio="none">
                     <defs>
-                        <path
-                            id="gentle-wave"
-                            d="M-160 44c30 0 
+                    <path id="gentle-wave"
+                    d="M-160 44c30 0 
                         58-18 88-18s
                         58 18 88 18 
                         58-18 88-18 
                         58 18 88 18
-                        v44h-352z"
-                        />
+                        v44h-352z" />
                     </defs>
                     <g class="wave1">
-                        <use
-                            xlink:href="#gentle-wave"
-                            x="50"
-                            y="3"
-                            fill="#ff1f87"
-                        />
+                        <use xlink:href="#gentle-wave" x="50" y="3" fill="#ff1f87"/>
                     </g>
                     <g class="wave2">
-                        <use
-                            xlink:href="#gentle-wave"
-                            x="50"
-                            y="0"
-                            fill="#4579e2"
-                        />
+                        <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2"/>
                     </g>
                     <g class="wave3">
-                        <use
-                            xlink:href="#gentle-wave"
-                            x="50"
-                            y="9"
-                            fill="#3461c1"
-                        />
+                        <use xlink:href="#gentle-wave" x="50" y="9" fill="#3461c1"/>
                     </g>
                     <g class="wave4">
-                        <use
-                            xlink:href="#gentle-wave"
-                            x="50"
-                            y="6"
-                            fill="turquoise"
-                        />
+                        <use xlink:href="#gentle-wave" x="50" y="6" fill="turquoise"/>  
                     </g>
                 </svg>
             </section>
@@ -138,169 +84,62 @@
                 <div class="container">
                     <div class="row">
                         <div class="profile-picture">
-                            <img src="assets/slark.jpeg" alt="" />
+                            <img src="assets/slark.jpeg" alt="">
                             <div class="bubble_container">
-                                <svg
-                                    viewBox="0 0 806 653"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
+                                <svg viewBox="0 0 806 653" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g class="bubbleGroup1">
                                         <g class="burst1">
-                                            <path
-                                                d="M104.348 257.927C103.672 257.25 103.672 256.154 104.348 255.477L118.6 241.225C119.277 240.548 120.374 240.548 121.05 241.225C121.726 241.901 121.726 242.998 121.05 243.674L106.798 257.927C106.121 258.603 105.025 258.603 104.348 257.927Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M99 263.5C99 264.881 97.8807 266 96.5 266C95.1193 266 94 264.881 94 263.5C94 262.119 95.1193 261 96.5 261C97.8807 261 99 262.119 99 263.5Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M73.4845 284.294C72.8081 284.97 72.8081 286.067 73.4845 286.743C74.161 287.42 75.2577 287.42 75.9342 286.743L90.1864 272.491C90.8629 271.814 90.8629 270.718 90.1864 270.041C89.51 269.365 88.4133 269.365 87.7368 270.041L73.4845 284.294Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M88.9897 258.021C88.316 258.7 87.2193 258.705 86.5401 258.031L72.2298 243.837C71.5506 243.163 71.5461 242.066 72.2198 241.387C72.8935 240.708 73.9902 240.704 74.6694 241.377L88.9797 255.571C89.6589 256.245 89.6633 257.342 88.9897 258.021Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M117.561 286.847C118.24 287.521 119.337 287.517 120.011 286.837C120.684 286.158 120.68 285.061 120.001 284.388L105.69 270.194C105.011 269.52 103.914 269.525 103.241 270.204C102.567 270.883 102.572 271.98 103.251 272.653L117.561 286.847Z"
-                                                fill="white"
-                                            />
+                                            <path d="M104.348 257.927C103.672 257.25 103.672 256.154 104.348 255.477L118.6 241.225C119.277 240.548 120.374 240.548 121.05 241.225C121.726 241.901 121.726 242.998 121.05 243.674L106.798 257.927C106.121 258.603 105.025 258.603 104.348 257.927Z" fill="white" />
+                                            <path d="M99 263.5C99 264.881 97.8807 266 96.5 266C95.1193 266 94 264.881 94 263.5C94 262.119 95.1193 261 96.5 261C97.8807 261 99 262.119 99 263.5Z" fill="white" />
+                                            <path d="M73.4845 284.294C72.8081 284.97 72.8081 286.067 73.4845 286.743C74.161 287.42 75.2577 287.42 75.9342 286.743L90.1864 272.491C90.8629 271.814 90.8629 270.718 90.1864 270.041C89.51 269.365 88.4133 269.365 87.7368 270.041L73.4845 284.294Z" fill="white" />
+                                            <path d="M88.9897 258.021C88.316 258.7 87.2193 258.705 86.5401 258.031L72.2298 243.837C71.5506 243.163 71.5461 242.066 72.2198 241.387C72.8935 240.708 73.9902 240.704 74.6694 241.377L88.9797 255.571C89.6589 256.245 89.6633 257.342 88.9897 258.021Z" fill="white" />
+                                            <path d="M117.561 286.847C118.24 287.521 119.337 287.517 120.011 286.837C120.684 286.158 120.68 285.061 120.001 284.388L105.69 270.194C105.011 269.52 103.914 269.525 103.241 270.204C102.567 270.883 102.572 271.98 103.251 272.653L117.561 286.847Z" fill="white" />
                                         </g>
-                                        <circle
-                                            class="bubble1"
-                                            cx="97"
-                                            cy="264"
-                                            r="26"
-                                            stroke="white"
-                                            stroke-width="4"
-                                            fill="rgba(0, 0, 0, .5)"
-                                        />
+                                        <circle class="bubble1" cx="97" cy="264" r="26" stroke="white" stroke-width="4" fill="rgba(0, 0, 0, .5)" />
                                     </g>
                                     <g class="bubbleGroup2">
                                         <g class="burst2">
-                                            <path
-                                                d="M269.348 253.927C268.672 253.25 268.672 252.154 269.348 251.477L283.6 237.225C284.277 236.548 285.374 236.548 286.05 237.225C286.726 237.901 286.726 238.998 286.05 239.674L271.798 253.927C271.121 254.603 270.025 254.603 269.348 253.927Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M264 259.5C264 260.881 262.881 262 261.5 262C260.119 262 259 260.881 259 259.5C259 258.119 260.119 257 261.5 257C262.881 257 264 258.119 264 259.5Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M238.485 280.294C237.808 280.97 237.808 282.067 238.485 282.743C239.161 283.42 240.258 283.42 240.934 282.743L255.186 268.491C255.863 267.814 255.863 266.718 255.186 266.041C254.51 265.365 253.413 265.365 252.737 266.041L238.485 280.294Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M253.99 254.021C253.316 254.7 252.219 254.705 251.54 254.031L237.23 239.837C236.551 239.163 236.546 238.066 237.22 237.387C237.893 236.708 238.99 236.704 239.669 237.377L253.98 251.571C254.659 252.245 254.663 253.342 253.99 254.021Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M282.561 282.847C283.24 283.521 284.337 283.517 285.011 282.837C285.684 282.158 285.68 281.061 285.001 280.388L270.69 266.194C270.011 265.52 268.915 265.525 268.241 266.204C267.567 266.883 267.572 267.98 268.251 268.653L282.561 282.847Z"
-                                                fill="white"
-                                            />
+                                            <path d="M269.348 253.927C268.672 253.25 268.672 252.154 269.348 251.477L283.6 237.225C284.277 236.548 285.374 236.548 286.05 237.225C286.726 237.901 286.726 238.998 286.05 239.674L271.798 253.927C271.121 254.603 270.025 254.603 269.348 253.927Z" fill="white" />
+                                            <path d="M264 259.5C264 260.881 262.881 262 261.5 262C260.119 262 259 260.881 259 259.5C259 258.119 260.119 257 261.5 257C262.881 257 264 258.119 264 259.5Z" fill="white" />
+                                            <path d="M238.485 280.294C237.808 280.97 237.808 282.067 238.485 282.743C239.161 283.42 240.258 283.42 240.934 282.743L255.186 268.491C255.863 267.814 255.863 266.718 255.186 266.041C254.51 265.365 253.413 265.365 252.737 266.041L238.485 280.294Z" fill="white" />
+                                            <path d="M253.99 254.021C253.316 254.7 252.219 254.705 251.54 254.031L237.23 239.837C236.551 239.163 236.546 238.066 237.22 237.387C237.893 236.708 238.99 236.704 239.669 237.377L253.98 251.571C254.659 252.245 254.663 253.342 253.99 254.021Z" fill="white" />
+                                            <path d="M282.561 282.847C283.24 283.521 284.337 283.517 285.011 282.837C285.684 282.158 285.68 281.061 285.001 280.388L270.69 266.194C270.011 265.52 268.915 265.525 268.241 266.204C267.567 266.883 267.572 267.98 268.251 268.653L282.561 282.847Z" fill="white" />
                                         </g>
-                                        <circle
-                                            class="bubble2"
-                                            cx="262"
-                                            cy="260"
-                                            r="26"
-                                            stroke="white"
-                                            stroke-width="4"
-                                        />
+                                        <circle class="bubble2" cx="262" cy="260" r="26" stroke="white" stroke-width="4" />
                                     </g>
                                     <g class="bubbleGroup3">
                                         <g class="burst3">
-                                            <path
-                                                d="M403.729 264.864C402.595 263.729 402.595 261.89 403.729 260.755L427.634 236.851C428.768 235.716 430.608 235.716 431.742 236.851C432.877 237.985 432.877 239.825 431.742 240.959L407.838 264.864C406.703 265.999 404.864 265.999 403.729 264.864Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M394.759 274.212C394.759 276.527 392.882 278.405 390.566 278.405C388.25 278.405 386.373 276.527 386.373 274.212C386.373 271.896 388.25 270.019 390.566 270.019C392.882 270.019 394.759 271.896 394.759 274.212Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M351.964 309.087C350.829 310.222 350.829 312.061 351.964 313.196C353.098 314.331 354.938 314.331 356.072 313.196L379.977 289.292C381.111 288.157 381.111 286.317 379.977 285.183C378.842 284.048 377.003 284.048 375.868 285.183L351.964 309.087Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M377.97 265.022C376.84 266.161 375 266.169 373.861 265.039L349.859 241.232C348.72 240.102 348.713 238.263 349.843 237.123C350.972 235.984 352.812 235.977 353.951 237.107L377.953 260.913C379.092 262.043 379.1 263.883 377.97 265.022Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M425.891 313.371C427.03 314.501 428.869 314.493 429.999 313.354C431.129 312.215 431.122 310.375 429.982 309.245L405.981 285.439C404.842 284.309 403.002 284.316 401.872 285.455C400.742 286.595 400.75 288.434 401.889 289.564L425.891 313.371Z"
-                                                fill="white"
-                                            />
+                                            <path d="M403.729 264.864C402.595 263.729 402.595 261.89 403.729 260.755L427.634 236.851C428.768 235.716 430.608 235.716 431.742 236.851C432.877 237.985 432.877 239.825 431.742 240.959L407.838 264.864C406.703 265.999 404.864 265.999 403.729 264.864Z" fill="white" />
+                                            <path d="M394.759 274.212C394.759 276.527 392.882 278.405 390.566 278.405C388.25 278.405 386.373 276.527 386.373 274.212C386.373 271.896 388.25 270.019 390.566 270.019C392.882 270.019 394.759 271.896 394.759 274.212Z" fill="white" />
+                                            <path d="M351.964 309.087C350.829 310.222 350.829 312.061 351.964 313.196C353.098 314.331 354.938 314.331 356.072 313.196L379.977 289.292C381.111 288.157 381.111 286.317 379.977 285.183C378.842 284.048 377.003 284.048 375.868 285.183L351.964 309.087Z" fill="white" />
+                                            <path d="M377.97 265.022C376.84 266.161 375 266.169 373.861 265.039L349.859 241.232C348.72 240.102 348.713 238.263 349.843 237.123C350.972 235.984 352.812 235.977 353.951 237.107L377.953 260.913C379.092 262.043 379.1 263.883 377.97 265.022Z" fill="white" />
+                                            <path d="M425.891 313.371C427.03 314.501 428.869 314.493 429.999 313.354C431.129 312.215 431.122 310.375 429.982 309.245L405.981 285.439C404.842 284.309 403.002 284.316 401.872 285.455C400.742 286.595 400.75 288.434 401.889 289.564L425.891 313.371Z" fill="white" />
                                         </g>
-                                        <circle
-                                            class="bubble3"
-                                            cx="391"
-                                            cy="276"
-                                            r="36"
-                                            stroke="white"
-                                            stroke-width="4"
-                                        />
+                                        <circle class="bubble3" cx="391" cy="276" r="36" stroke="white" stroke-width="4" />
                                     </g>
                                     <g class="bubbleGroup4">
                                         <g class="burst4">
-                                            <path
-                                                d="M698.197 263.845C696.908 262.554 696.908 260.461 698.197 259.17L725.364 231.968C726.653 230.677 728.744 230.677 730.033 231.968C731.322 233.259 731.322 235.352 730.033 236.643L702.867 263.845C701.577 265.136 699.487 265.136 698.197 263.845Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M688.003 274.482C688.003 277.117 685.87 279.253 683.238 279.253C680.606 279.253 678.473 277.117 678.473 274.482C678.473 271.846 680.606 269.71 683.238 269.71C685.87 269.71 688.003 271.846 688.003 274.482Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M639.368 314.167C638.079 315.458 638.079 317.551 639.368 318.842C640.658 320.133 642.748 320.133 644.037 318.842L671.204 291.641C672.493 290.35 672.493 288.257 671.204 286.966C669.914 285.675 667.824 285.675 666.535 286.966L639.368 314.167Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M668.923 264.024C667.639 265.321 665.548 265.329 664.253 264.044L636.977 236.953C635.682 235.668 635.673 233.575 636.958 232.278C638.242 230.982 640.332 230.973 641.627 232.259L668.904 259.349C670.198 260.635 670.207 262.728 668.923 264.024Z"
-                                                fill="white"
-                                            />
-                                            <path
-                                                d="M723.383 319.041C724.677 320.327 726.768 320.318 728.052 319.022C729.336 317.726 729.328 315.633 728.033 314.347L700.756 287.257C699.461 285.971 697.371 285.98 696.087 287.276C694.803 288.572 694.811 290.665 696.106 291.951L723.383 319.041Z"
-                                                fill="white"
-                                            />
+                                            <path d="M698.197 263.845C696.908 262.554 696.908 260.461 698.197 259.17L725.364 231.968C726.653 230.677 728.744 230.677 730.033 231.968C731.322 233.259 731.322 235.352 730.033 236.643L702.867 263.845C701.577 265.136 699.487 265.136 698.197 263.845Z" fill="white" />
+                                            <path d="M688.003 274.482C688.003 277.117 685.87 279.253 683.238 279.253C680.606 279.253 678.473 277.117 678.473 274.482C678.473 271.846 680.606 269.71 683.238 269.71C685.87 269.71 688.003 271.846 688.003 274.482Z" fill="white" />
+                                            <path d="M639.368 314.167C638.079 315.458 638.079 317.551 639.368 318.842C640.658 320.133 642.748 320.133 644.037 318.842L671.204 291.641C672.493 290.35 672.493 288.257 671.204 286.966C669.914 285.675 667.824 285.675 666.535 286.966L639.368 314.167Z" fill="white" />
+                                            <path d="M668.923 264.024C667.639 265.321 665.548 265.329 664.253 264.044L636.977 236.953C635.682 235.668 635.673 233.575 636.958 232.278C638.242 230.982 640.332 230.973 641.627 232.259L668.904 259.349C670.198 260.635 670.207 262.728 668.923 264.024Z" fill="white" />
+                                            <path d="M723.383 319.041C724.677 320.327 726.768 320.318 728.052 319.022C729.336 317.726 729.328 315.633 728.033 314.347L700.756 287.257C699.461 285.971 697.371 285.98 696.087 287.276C694.803 288.572 694.811 290.665 696.106 291.951L723.383 319.041Z" fill="white" />
                                         </g>
-                                        <path
-                                            class="bubble4"
-                                            d="M735 275C735 301.99 712.24 324 684 324C655.76 324 633 301.99 633 275C633 248.01 655.76 226 684 226C712.24 226 735 248.01 735 275Z"
-                                            stroke="white"
-                                            stroke-width="4"
-                                        />
-                                    </g>
+                                        <path class="bubble4" d="M735 275C735 301.99 712.24 324 684 324C655.76 324 633 301.99 633 275C633 248.01 655.76 226 684 226C712.24 226 735 248.01 735 275Z" stroke="white" stroke-width="4" />
+                                    </g>		
                                 </svg>
-                            </div>
+                            </div>      
                         </div>
                         <div class="col">
                             <h2 class="title-section">About me</h2>
-                            <p>
-                                A self taught developer. I enjoy learning about
-                                the latest techonological innovations and
-                                exploring new ideas to put into practice.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
+                            <p>A self taught developer. I enjoy learning about the latest techonological innovations and exploring new ideas to put into practice.</p> 
+                        </div>  
+                    </div>                    
+                    <div class="row">    
                         <div class="tab">
-                            <button
-                                class="tablinks skills_button"
-                                onclick="clickTab(event, 'skills')"
-                                id="skills_tab"
-                            >
-                                Skills
-                            </button>
+                            <button class="tablinks skills_button" onclick="clickTab(event, 'skills')" id="skills_tab">Skills</button>
                             <!--<button class="tablinks" onclick="clickTab(event, 'education')">Education</button>-->
-                            <button
-                                class="tablinks hobbies_button"
-                                onclick="clickTab(event, 'hobbies')"
-                                id="hobbies_tab"
-                            >
-                                Hobbies
-                            </button>
+                            <button class="tablinks hobbies_button" onclick="clickTab(event, 'hobbies')" id="hobbies_tab">Hobbies</button>
                         </div>
                         <div id="skills" class="tabcontent">
                             <div class="skills_row">
@@ -339,68 +178,35 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>                      
                         <div id="education" class="tabcontent">
                             <p>No hablo ingles</p>
-                        </div>
+                        </div>                      
                         <div id="hobbies" class="tabcontent">
                             <ul class="hobbies_list">
-                                <li class="hobbies_item">
-                                    <i class="fas fa-gamepad"></i>Gaming
-                                </li>
-                                <li class="hobbies_item">
-                                    <i class="fas fa-music"></i>Listening to
-                                    music
-                                </li>
-                                <li class="hobbies_item">
-                                    <i class="fa-solid fa-tv"></i>Watching
-                                    Esports & TV
-                                </li>
-                                <li class="hobbies_item">
-                                    <i class="fa-brands fa-reddit"></i>Browsing
-                                    reddit
-                                </li>
-                                <li class="hobbies_item">
-                                    <i class="fa-solid fa-mug-saucer"></i
-                                    >Drinking coffee
-                                </li>
-                                <li class="hobbies_item">
-                                    <i class="fa-solid fa-pizza-slice"></i
-                                    >Eating pizza
-                                </li>
-                                <li class="hobbies_item">
-                                    <i class="fa-solid fa-bed"></i>Sleeping
-                                </li>
+                                <li class="hobbies_item"><i class="fas fa-gamepad"></i>Gaming</li>
+                                <li class="hobbies_item"><i class="fas fa-music"></i>Listening to music</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-tv"></i>Watching Esports & TV</li>                                
+                                <li class="hobbies_item"><i class="fa-brands fa-reddit"></i>Browsing reddit</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-mug-saucer"></i>Drinking coffee</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-pizza-slice"></i>Eating pizza</li>
+                                <li class="hobbies_item"><i class="fa-solid fa-bed"></i>Sleeping</li>
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div>                
             </section>
             <section class="projects" id="projects">
                 <div class="container">
                     <h2 class="title-section">Projects</h2>
                     <div class="row project">
                         <div class="col">
-                            <img
-                                src="assets/little-group.png"
-                                alt=""
-                                loading="lazy"
-                            />
+                            <img src="assets/little-group.png" alt="" loading="lazy">
                         </div>
                         <div class="col project_content">
                             <h3>Little Garden Group</h3>
-                            <a
-                                class="project_link"
-                                href="https://www.littlegarden-group.co.jp/"
-                                target="_blank"
-                                rel="noopener"
-                                ><i class="fas fa-external-link-alt"></i
-                                >Visit</a
-                            >
-                            <p class="project_info">
-                                Company website for Little Garden International
-                                childcare schools.
-                            </p>
+                            <a class="project_link" href="https://www.littlegarden-group.co.jp/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i>Visit</a>
+                            <p class="project_info">Company website for the Little Garden International childcare schools.</p>
                             <ul class="project_tags">
                                 <li>WordPress</li>
                                 <li>HTML/CSS</li>
@@ -411,39 +217,27 @@
                     </div>
                     <div class="row project">
                         <div class="col">
-                            <img
-                                src="assets/little-garden.png"
-                                alt=""
-                                loading="lazy"
-                            />
+                            <img src="assets/little-garden.png" alt="" loading="lazy">
                         </div>
                         <div class="col project_content">
                             <h3>Little Garden</h3>
-                            <span
-                                ><a
-                                    href="https://littlegarden-inter.com/"
-                                    target="_blank"
-                                    rel="noopener"
-                                    ><i class="fas fa-external-link-alt"></i></a
-                            ></span>
-                            <p class="project_info">
-                                Website for an international childcare school.
-                            </p>
+                            <span><a href="https://littlegarden-inter.com/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></span>
+                            <p class="project_info">Website for an international childcare school.</p>
                         </div>
                     </div>
-                </div>
+                </div> 
             </section>
             <section class="contact" id="contact">
                 <div class="container">
                     <h2 class="title-section">Contact</h2>
-                </div>
+                </div> 
             </section>
         </main>
-        <footer id="footer">
+        <footer id="footer">     
             <div class="footer_bg">
                 <div class="tentacles"></div>
                 <div class="tidehunter"></div>
-            </div>
+            </div>          
             <div class="socials">
                 <a href="https://youtube.com/mooshkid25" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
@@ -451,10 +245,7 @@
                 <a href="https://twitch.tv/mooshkid" target="_blank">
                     <i class="fa-brands fa-twitch"></i>
                 </a>
-                <a
-                    href="https://discord.com/users/mooshkid#1641"
-                    target="_blank"
-                >
+                <a href="https://discord.com/users/mooshkid#1641" target="_blank">
                     <i class="fa-brands fa-discord"></i>
                 </a>
                 <a href="https://github.com/mooshkid" target="_blank">
