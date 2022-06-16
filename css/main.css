@@ -193,6 +193,10 @@ h2 {
   z-index: 1;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
 p {
   font-size: 1.2rem;
   font-weight: 700;
@@ -219,7 +223,6 @@ section {
   align-items: center;
   gap: 2rem;
 }
-
 .hero_text span {
   background: #335eea;
   background: linear-gradient(45deg, #335eea, #5dff63);
@@ -283,7 +286,6 @@ section {
   text-align: center;
   position: relative;
 }
-
 .profile-picture img {
   height: 300px;
   width: 300px;
@@ -302,7 +304,6 @@ section {
   color: #ffffff;
   text-shadow: 2px 2px 5px #484848;
 }
-
 .title-section::after {
   content: "";
   display: block;
@@ -328,24 +329,16 @@ section {
   position: absolute;
   top: 0;
 }
-
 .bubble_container svg {
   height: 100%;
   overflow: visible;
 }
 
-.burst1,
-.burst2,
-.burst3,
-.burst4 {
+.burst1, .burst2, .burst3, .burst4 {
   opacity: 0;
 }
 
-.bubble1,
-.bubble2,
-.bubble3,
-.bubble4,
-.bubbles {
+.bubble1, .bubble2, .bubble3, .bubble4, .bubbles {
   fill: white;
   opacity: 0.8;
 }
@@ -455,7 +448,7 @@ section {
   color: white;
 }
 
-.tab .active:after {
+.tab .active::after {
   content: "";
   display: block;
   border-bottom: 4px solid #ff1f87;
@@ -508,7 +501,6 @@ section {
   font-weight: 700;
   padding-bottom: 1.5rem;
 }
-
 .hobbies_list i {
   width: 3rem;
   font-size: 1.5rem;
@@ -539,9 +531,8 @@ section {
   padding: 7rem 0;
   color: #ffffff;
 }
-
 .projects img {
-  border-radius: 30px;
+  border-radius: 10px;
   box-shadow: 2px 2px 10px white;
   -o-object-fit: cover;
      object-fit: cover;
@@ -557,7 +548,6 @@ section {
 .project .col {
   padding: 1rem;
 }
-
 .project:nth-of-type(even) {
   text-align: left;
 }
@@ -568,10 +558,6 @@ section {
   align-items: flex-end;
   justify-content: center;
   gap: 0.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
 }
 
 .project_link {
@@ -634,7 +620,6 @@ footer {
   margin-bottom: 2rem;
   gap: 1rem;
 }
-
 .socials a {
   font-size: 2rem;
   color: whitesmoke;
