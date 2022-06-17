@@ -239,19 +239,7 @@ document.getElementById("hobbies_tab").addEventListener("click", function() {
 
 
 // PROJECTS
-// gsap.from(".project", {
-//     y: 100, 
-//     opacity: 0,
-//     // stagger: {
-//     //     each: 0.1,
-//     //     from: "random"
-//     // },
-//     scrollTrigger: {
-//         trigger: ".project",
-//         start: "top bottom",
-//         markers: true,
-//     }
-// });
+// loop each .project class
 const projects = gsap.utils.toArray('.project');
 projects.forEach(project => {
   gsap.from(project, { 
@@ -259,9 +247,11 @@ projects.forEach(project => {
     x: -100,
     duration: 2,
     opacity: 0,
+    ease: "easein",
     scrollTrigger: {
       trigger: project,
-      markers: true
+      start: "top 80%",
+    //   markers: true
     }
   })
 });

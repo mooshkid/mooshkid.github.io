@@ -532,6 +532,12 @@ section {
   color: #ffffff;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .project {
   text-align: right;
   background: #4e5da6;
