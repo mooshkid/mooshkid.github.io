@@ -1,0 +1,30 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f3f3f3;
+}
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* DISABLE CSS TRANSITION ON MEDIA QUERY */
+body.stop-transition .nav_menu {
+    transition: none !important;
+}
+
+.col {
+    @include mq(tablet) {
+        flex: 1;
+    }
+}
+.row {
+    margin-bottom: 4rem;
+
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
