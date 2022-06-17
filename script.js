@@ -245,12 +245,12 @@ projects.forEach(project => {
   gsap.from(project, { 
     // y: 100,
     x: -100,
-    duration: 2,
+    duration: 1.5,
     opacity: 0,
-    ease: "easein",
+    ease: "sine.out",
     scrollTrigger: {
       trigger: project,
-      start: "top 80%",
+      start: "top 70%",
     //   markers: true
     }
   })
