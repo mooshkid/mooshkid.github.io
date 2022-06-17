@@ -238,6 +238,36 @@ document.getElementById("hobbies_tab").addEventListener("click", function() {
 });
 
 
+// PROJECTS
+// gsap.from(".project", {
+//     y: 100, 
+//     opacity: 0,
+//     // stagger: {
+//     //     each: 0.1,
+//     //     from: "random"
+//     // },
+//     scrollTrigger: {
+//         trigger: ".project",
+//         start: "top bottom",
+//         markers: true,
+//     }
+// });
+const projects = gsap.utils.toArray('.project');
+projects.forEach(project => {
+  gsap.from(project, { 
+    // y: 100,
+    x: -100,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: project,
+      markers: true
+    }
+  })
+});
+
+
+
 // FOOTER ANIMATIONS
 // window load event makes sure image is // loaded before running animation
 //$(window).on("load", function() {
