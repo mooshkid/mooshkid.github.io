@@ -90,6 +90,14 @@ p {
   line-height: 1.5;
 }
 
+#anchor {
+  position: fixed;
+  right: 3vw;
+  bottom: 3vw;
+  width: 20vw;
+  z-index: 3;
+}
+
 /* Hamburger */
 .hamburger {
   padding: 15px;
