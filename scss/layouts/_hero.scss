@@ -25,7 +25,7 @@
 //     }
 // }
 
-.hero_content {
+.hero-content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);    
     align-items: center;
@@ -36,7 +36,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-.hero_text {
+.hero-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,7 +60,7 @@
         background-position: 100%;
     }
 }
-.hero_content {
+.hero-content {
     img {
         width: 90%;
         margin: 0 auto;

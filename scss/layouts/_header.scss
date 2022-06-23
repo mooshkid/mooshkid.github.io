@@ -26,7 +26,7 @@ header {
     height: 100%;
     padding: 0 10px;
 }
-.nav_menu {
+.nav-menu {
     position: absolute;
     width: 300px;
     height: 100vh;
@@ -51,17 +51,17 @@ header {
         transform: translateX(0);
     }
 }
-.nav_menu.active {
+.nav-menu.active {
     transform: translateX(0);
     transition: transform .3s ease-out;
 }
-.nav_menu_list {
+.nav-menu-list {
     margin: 20px;
 }
-.nav_menu_link {
+.nav-menu-link {
     padding: 20px;
 }
-.nav_backdrop {
+.nav-backdrop {
     visibility: hidden;
     position: fixed;
     height: 100vh;
@@ -70,7 +70,7 @@ header {
     opacity: 0;
     transition: opacity 300ms ease-in-out;
 }
-.nav_backdrop.active {
+.nav-backdrop.active {
     visibility: visible;
     opacity: 1;
 }

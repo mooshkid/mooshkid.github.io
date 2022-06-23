@@ -1,7 +1,7 @@
 // MOBILE MENU
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav_menu");
-const backdrop = document.querySelector(".nav_backdrop");
+const navMenu = document.querySelector(".nav-menu");
+const backdrop = document.querySelector(".nav-backdrop");
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -11,30 +11,36 @@ function mobileMenu() {
     backdrop.classList.toggle("active");
 }
 
-window.addEventListener('mouseup', function(event){
-	if (event.target != navMenu && event.target.parentNode != navMenu && event.target != hamburger && event.target != document.querySelector(".hamburger-inner") && event.target != document.querySelector(".hamburger-box")) {
+window.addEventListener("mouseup", function (event) {
+    if (
+        event.target != navMenu &&
+        event.target.parentNode != navMenu &&
+        event.target != hamburger &&
+        event.target != document.querySelector(".hamburger-inner") &&
+        event.target != document.querySelector(".hamburger-box")
+    ) {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
         backdrop.classList.remove("active");
     }
 });
 
-// DISABLE CSS TRANSITION ON MEDIA QUERY 
+// DISABLE CSS TRANSITION ON MEDIA QUERY
 stopResponsiveTransition();
 function stopResponsiveTransition() {
     const classes = document.body.classList;
     let timer = null;
-    window.addEventListener('resize', function () {
-    if (timer){
-        clearTimeout(timer);
-        timer = null;
-    }else {
-        classes.add('stop-transition');
-    }
-    timer = setTimeout(() => {
-        classes.remove('stop-transition');
-        timer = null;
-    }, 100);
+    window.addEventListener("resize", function () {
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        } else {
+            classes.add("stop-transition");
+        }
+        timer = setTimeout(() => {
+            classes.remove("stop-transition");
+            timer = null;
+        }, 100);
     });
 }
 
@@ -48,76 +54,71 @@ const tl2 = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
 const tl3 = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
 const tl4 = gsap.timeline({ repeat: -1, repeatDelay: 0.5 });
 
-tl1
-	.to(".bubbleGroup1", 8, {
-		motionPath: {
-			path: [
-				{ x: 0, y: 500 },
-				{ x: 50, y: -70 },
-				{ x: -50, y: -140 },
-				{ x: 0, y: -220 }
-			],
-			type: "cubic",
-			curviness: 1,
-			autoRotate: true
-		},
-		scale: 2
-	})
-	.to(".bubble1", { opacity: 0 })
-	.to(".burst1", { opacity: 1 }, "-=.5");
+tl1.to(".bubbleGroup1", 8, {
+    motionPath: {
+        path: [
+            { x: 0, y: 500 },
+            { x: 50, y: -70 },
+            { x: -50, y: -140 },
+            { x: 0, y: -220 },
+        ],
+        type: "cubic",
+        curviness: 1,
+        autoRotate: true,
+    },
+    scale: 2,
+})
+    .to(".bubble1", { opacity: 0 })
+    .to(".burst1", { opacity: 1 }, "-=.5");
 
-tl2
-	.to(".bubbleGroup2", 6, {
-		motionPath: {
-			path: [
-				{ x: 0, y: 500 },
-				{ x: -50, y: -20 },
-				{ x: -50, y: -140 },
-				{ x: 0, y: -250 }
-			],
-			type: "cubic",
-			curviness: 1,
-			autoRotate: true
-		},
-		scale: 1.2
-	})
-	.to(".bubble2", { opacity: 0 })
-	.to(".burst2", { opacity: 1 }, "-=.5");
+tl2.to(".bubbleGroup2", 6, {
+    motionPath: {
+        path: [
+            { x: 0, y: 500 },
+            { x: -50, y: -20 },
+            { x: -50, y: -140 },
+            { x: 0, y: -250 },
+        ],
+        type: "cubic",
+        curviness: 1,
+        autoRotate: true,
+    },
+    scale: 1.2,
+})
+    .to(".bubble2", { opacity: 0 })
+    .to(".burst2", { opacity: 1 }, "-=.5");
 
-tl3
-	.to(".bubbleGroup3", 5, {
-		motionPath: {
-			path: [
-				{ x: 0, y: 500 },
-				{ x: 50, y: -20 },
-				{ x: 0, y: -100 },
-				{ x: 0, y: -100 }
-			],
-			type: "cubic",
-			curviness: 1,
-			autoRotate: true
-		}
-	})
-	.to(".bubble3", { opacity: 0 })
-	.to(".burst3", { opacity: 1 }, "-=.5");
+tl3.to(".bubbleGroup3", 5, {
+    motionPath: {
+        path: [
+            { x: 0, y: 500 },
+            { x: 50, y: -20 },
+            { x: 0, y: -100 },
+            { x: 0, y: -100 },
+        ],
+        type: "cubic",
+        curviness: 1,
+        autoRotate: true,
+    },
+})
+    .to(".bubble3", { opacity: 0 })
+    .to(".burst3", { opacity: 1 }, "-=.5");
 
-tl4
-	.to(".bubbleGroup4", 10, {
-		motionPath: {
-			path: [
-				{ x: 0, y: 500 },
-				{ x: 50, y: -50 },
-				{ x: 0, y: -100 },
-				{ x: 20, y: -170 }
-			],
-			type: "cubic",
-			curviness: 1,
-			autoRotate: true
-		}
-	})
-	.to(".bubble4", { opacity: 0 })
-	.to(".burst4", { opacity: 1 }, "-=.5");
-
+tl4.to(".bubbleGroup4", 10, {
+    motionPath: {
+        path: [
+            { x: 0, y: 500 },
+            { x: 50, y: -50 },
+            { x: 0, y: -100 },
+            { x: 20, y: -170 },
+        ],
+        type: "cubic",
+        curviness: 1,
+        autoRotate: true,
+    },
+})
+    .to(".bubble4", { opacity: 0 })
+    .to(".burst4", { opacity: 1 }, "-=.5");
 
 /*
 SLARK MINIONS???? FIXXXXX PLZZZZZZZ
@@ -166,114 +167,116 @@ function random(min, max) {
 }
 */
 
-
 // SKILLS TAB
 function clickTab(event, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
-  
+
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
-  
+
     // Get all elements with class="tablinks" and remove the class "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-  
+
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
     event.currentTarget.className += " active";
-  }
+}
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("skills_tab").click();
 
-// initial animation for .skills_item
+// initial animation for .skills-item
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(".skills_item", {
-    y: 100, 
+gsap.from(".skills-item", {
+    y: 100,
     opacity: 0,
     stagger: {
         each: 0.1,
-        from: "random"
+        from: "random",
     },
     scrollTrigger: {
         trigger: ".tab",
-        start: "top center"
-    }
+        start: "top center",
+    },
 });
 // on clicking the skills & hobbies buttons
-// $(".skills_button").on("click",  <---jquery version
-document.getElementById("skills_tab").addEventListener("click", 
-    function() {
-        gsap.fromTo(".skills_item", {
-            y: 100, 
-            opacity: 0
-        }, {
+// $(".skills-button").on("click",  <---jquery version
+document.getElementById("skills_tab").addEventListener("click", function () {
+    gsap.fromTo(
+        ".skills-item",
+        {
+            y: 100,
+            opacity: 0,
+        },
+        {
             y: 0,
             opacity: 1,
             stagger: {
                 each: 0.1,
-                from: "random"
-            }
-        });
-    }
-);
-
-document.getElementById("hobbies_tab").addEventListener("click", function() {
-    gsap.fromTo(".hobbies_item", {
-        x: -100,
-        opacity:0,
-    }, {
-        x: 0,
-        opacity: 1,
-        stagger: {
-            each: 0.1,
-            from: "random"
+                from: "random",
+            },
         }
-    });
+    );
 });
 
+document.getElementById("hobbies_tab").addEventListener("click", function () {
+    gsap.fromTo(
+        ".hobbies-item",
+        {
+            x: -100,
+            opacity: 0,
+        },
+        {
+            x: 0,
+            opacity: 1,
+            stagger: {
+                each: 0.1,
+                from: "random",
+            },
+        }
+    );
+});
 
 // PROJECTS
 // loop each .project class
-const projects = gsap.utils.toArray('.project');
-projects.forEach(project => {
-  gsap.from(project, { 
-    // y: 100,
-    x: -100,
-    duration: 1.5,
-    opacity: 0,
-    ease: "sine.out",
-    scrollTrigger: {
-      trigger: project,
-      start: "top 70%",
-    //   markers: true
-    }
-  })
+const projects = gsap.utils.toArray(".project");
+projects.forEach((project) => {
+    gsap.from(project, {
+        // y: 100,
+        x: -100,
+        duration: 1.5,
+        opacity: 0,
+        ease: "sine.out",
+        scrollTrigger: {
+            trigger: project,
+            start: "top 70%",
+            //   markers: true
+        },
+    });
 });
-
-
 
 // FOOTER ANIMATIONS
 // window load event makes sure image is // loaded before running animation
 //$(window).on("load", function() {
-window.onload = function() {
-    var tl = new TimelineMax({repeat:-1});
+window.onload = function () {
+    var tl = new TimelineMax({ repeat: -1 });
     tl.to(".tidehunter", 20, {
         backgroundPosition: "1920px bottom",
-        autoRound:false,
-        ease: Linear.easeNone
+        autoRound: false,
+        ease: Linear.easeNone,
     });
 
-    var tl2 = new TimelineMax({repeat:-1});
+    var tl2 = new TimelineMax({ repeat: -1 });
     tl2.to(".tentacles", 200, {
         backgroundPosition: "5000px bottom",
-        autoRound:false,
-        ease: Linear.easeNone
+        autoRound: false,
+        ease: Linear.easeNone,
     });
-    return
+    return;
 };

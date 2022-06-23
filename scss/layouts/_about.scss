@@ -126,7 +126,7 @@
         }
     }
 }
-.skills_row {
+.skills-row {
     display: flex;
     justify-content: center;
     max-width: 30rem;
@@ -136,7 +136,7 @@
         margin: 0;
     }
 }
-.skills_col {
+.skills-col {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,7 +144,7 @@
     flex: 1;
     gap: 3rem;
 }
-.skills_item {
+.skills-item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,11 +152,11 @@
     i {
         font-size: 4rem;
     }
-    .skills_name {
+    .skills-name {
         white-space: nowrap; // IS THIS NEEDED?
     }
 }
-.hobbies_item {
+.hobbies-item {
     display: flex;
     align-items: center;
     gap: 2rem;
