@@ -96,17 +96,7 @@ p {
   bottom: 3vw;
   width: 20vw;
   z-index: 3;
-  -webkit-animation: wiggle 3s infinite alternate;
-          animation: wiggle 3s infinite alternate;
-}
-
-@-webkit-keyframes wiggle {
-  from {
-    transform: rotate(-35deg);
-  }
-  to {
-    transform: rotate(35deg);
-  }
+  animation: wiggle 3s infinite alternate;
 }
 
 @keyframes wiggle {
@@ -117,6 +107,106 @@ p {
     transform: rotate(35deg);
   }
 }
+.button-primary-100 {
+  color: hsl(14deg, 100%, 80%);
+  background-color: #99e7ff;
+}
+
+.button-primary-200 {
+  color: hsl(14deg, 100%, 70%);
+  background-color: #66dbff;
+}
+
+.button-primary-300 {
+  color: hsl(14deg, 100%, 60%);
+  background-color: #33cfff;
+}
+
+.button-primary-400 {
+  color: hsl(12deg, 100%, 43%);
+  background-color: #00afdb;
+}
+
+.button-primary-500 {
+  color: hsl(14deg, 100%, 20%);
+  background-color: #004e66;
+}
+
+.button-article-100 {
+  color: hsl(219deg, 89%, 80%);
+  background-color: #f9da9f;
+}
+
+.button-article-200 {
+  color: hsl(219deg, 89%, 70%);
+  background-color: #f7c76e;
+}
+
+.button-article-300 {
+  color: hsl(219deg, 89%, 60%);
+  background-color: #f4b43e;
+}
+
+.button-article-400 {
+  color: hsl(212deg, 61%, 37%);
+  background-color: #986225;
+}
+
+.button-article-500 {
+  color: hsl(219deg, 89%, 20%);
+  background-color: #604106;
+}
+
+.button-youtube-100 {
+  color: hsl(345deg, 88%, 80%);
+  background-color: #9ff9e2;
+}
+
+.button-youtube-200 {
+  color: hsl(345deg, 88%, 70%);
+  background-color: #6ff6d4;
+}
+
+.button-youtube-300 {
+  color: hsl(345deg, 88%, 60%);
+  background-color: #3ff3c6;
+}
+
+.button-youtube-400 {
+  color: hsl(345deg, 88%, 46%);
+  background-color: #0edda9;
+}
+
+.button-youtube-500 {
+  color: hsl(345deg, 88%, 20%);
+  background-color: #066049;
+}
+
+.button-course-100 {
+  color: hsl(176deg, 66%, 70%);
+  background-color: #e58087;
+}
+
+.button-course-200 {
+  color: hsl(176deg, 66%, 60%);
+  background-color: #dc565f;
+}
+
+.button-course-300 {
+  color: hsl(176deg, 66%, 40%);
+  background-color: #a9232c;
+}
+
+.button-course-400 {
+  color: hsl(176deg, 66%, 30%);
+  background-color: #7f1a21;
+}
+
+.button-course-500 {
+  color: hsl(176deg, 66%, 20%);
+  background-color: #551116;
+}
+
 /* Hamburger */
 .hamburger {
   padding: 15px;
@@ -203,34 +293,21 @@ p {
   background-color: transparent;
 }
 .divider-wave .wave1 use {
-  -webkit-animation: left-wave 10s linear infinite;
-          animation: left-wave 10s linear infinite;
+  animation: left-wave 10s linear infinite;
 }
 .divider-wave .wave2 use {
-  -webkit-animation: right-wave 8s linear infinite;
-          animation: right-wave 8s linear infinite;
+  animation: right-wave 8s linear infinite;
 }
 .divider-wave .wave3 use {
-  -webkit-animation: left-wave 6s linear infinite;
-          animation: left-wave 6s linear infinite;
+  animation: left-wave 6s linear infinite;
 }
 .divider-wave .wave4 use {
-  -webkit-animation: right-wave 4s linear infinite;
-          animation: right-wave 4s linear infinite;
+  animation: right-wave 4s linear infinite;
 }
 @media (min-width: 768px) {
   .divider-wave {
     grid-column-start: 1;
     grid-column-end: 3;
-  }
-}
-
-@-webkit-keyframes left-wave {
-  from {
-    transform: translateX(85px);
-  }
-  to {
-    transform: translateX(-90px);
   }
 }
 
@@ -240,14 +317,6 @@ p {
   }
   to {
     transform: translateX(-90px);
-  }
-}
-@-webkit-keyframes right-wave {
-  from {
-    transform: translateX(-90px);
-  }
-  to {
-    transform: translateX(85px);
   }
 }
 @keyframes right-wave {
@@ -273,8 +342,7 @@ p {
   background-color: transparent;
 }
 .divider-wave2 .wave2 use {
-  -webkit-animation: right-wave 8s linear infinite;
-          animation: right-wave 8s linear infinite;
+  animation: right-wave 8s linear infinite;
 }
 
 /* Header */
@@ -389,17 +457,7 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-animation: text-animation 2s infinite alternate;
-          animation: text-animation 2s infinite alternate;
-}
-
-@-webkit-keyframes text-animation {
-  from {
-    background-position: 0%;
-  }
-  to {
-    background-position: 100%;
-  }
+  animation: text-animation 2s infinite alternate;
 }
 
 @keyframes text-animation {
@@ -447,8 +505,7 @@ header {
 .profile-picture img {
   height: 300px;
   width: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 50%;
   filter: drop-shadow(2px 2px 10px aquamarine);
 }
@@ -654,8 +711,7 @@ header {
 .project img {
   border-radius: 10px;
   box-shadow: 2px 2px 10px white;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .project-content {

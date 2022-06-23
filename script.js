@@ -255,7 +255,7 @@ projects.forEach((project) => {
         ease: "sine.out",
         scrollTrigger: {
             trigger: project,
-            start: "top 70%",
+            start: "top 80%",
             //   markers: true
         },
     });
@@ -280,6 +280,8 @@ window.onload = function () {
     });
     return;
 };
+
+
 
 
 // Scroll to next section on click 'anchor.png'

@@ -1,0 +1,13 @@
+// This creates tons of css classes
+// if you dont want to generate all these classes
+// use the get-color function instead
+@each $color, $shades in $colors {
+    @if $color != neutral {
+        @each $shade, $value in $shades {
+            .button-#{$color}-#{$shade} {
+                color: $value;
+                background-color: complement($value);
+            }
+        }
+    }
+}
