@@ -4,4 +4,15 @@
     bottom: 3vw;
     width: 20vw;
     z-index: 3;
+    // transform: rotate(-35deg);
+    animation: wiggle 3s infinite alternate;
+}
+
+@keyframes wiggle {
+    from {
+        transform: rotate(-35deg);
+    }
+    to {
+        transform: rotate(35deg);
+    }
 }

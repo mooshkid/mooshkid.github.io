@@ -96,8 +96,27 @@ p {
   bottom: 3vw;
   width: 20vw;
   z-index: 3;
+  -webkit-animation: wiggle 3s infinite alternate;
+          animation: wiggle 3s infinite alternate;
 }
 
+@-webkit-keyframes wiggle {
+  from {
+    transform: rotate(-35deg);
+  }
+  to {
+    transform: rotate(35deg);
+  }
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotate(-35deg);
+  }
+  to {
+    transform: rotate(35deg);
+  }
+}
 /* Hamburger */
 .hamburger {
   padding: 15px;
