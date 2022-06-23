@@ -202,7 +202,7 @@ gsap.from(".skills-item", {
     },
     scrollTrigger: {
         trigger: ".tab",
-        start: "top center",
+        start: "top 65%",
     },
 });
 // on clicking the skills & hobbies buttons
@@ -287,8 +287,8 @@ window.onload = function () {
 $(function(){
     
     var pagePositon = 0,
-        sectionsSeclector = 'section',
-        $scrollItems = $(sectionsSeclector),
+        sectionSelector = 'section',
+        $scrollItems = $(sectionSelector),
         offsetTolorence = 30,
         pageMaxPosition = $scrollItems.length - 1;
     
@@ -306,11 +306,12 @@ $(function(){
                   scrollTop: $scrollItems.eq(pagePositon).offset().top
             }, 300);
         }
-        if ($(this).hasClass('previous') && pagePositon-1 >= 0) {
-            pagePositon--;
+        // scroll back to top
+        if ($(this).hasClass('backtop') && pagePositon-1 >= 0) {
+            pagePositon = 0;
             $('html, body').stop().animate({ 
-                  scrollTop: $scrollItems.eq(pagePositon).offset().top
-              }, 300);
+                  scrollTop: 0
+              }, 800);
             return false;
         }
     });
@@ -319,12 +320,24 @@ $(function(){
     function upPos(){
        var fromTop = $(this).scrollTop();
        var $cur = null;
+       var totalCur = $('section').length-1;
+       
         $scrollItems.each(function(index,ele){
             if ($(ele).offset().top < fromTop + offsetTolorence) $cur = $(ele);
         });
        if ($cur != null && pagePositon != $cur.data('pos')) {
            pagePositon = $cur.data('pos');
+
+		   // if last item, add class to controls
+		   var current = $($cur).attr("debog");
+		   
+		   if ( current == totalCur ) {
+				$('#anchor a').removeClass('next');
+				$('#anchor a').addClass('backtop');
+		   } else {
+				$('#anchor a').addClass('next');
+				$('#anchor a').removeClass('backtop');
+		   };
        }                   
-    }
-    
+    }    
 });
