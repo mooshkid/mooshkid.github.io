@@ -1,5 +1,5 @@
-// This creates tons of css classes
-// if you dont want to generate all these classes
+// This loop creates TONS of css classes
+// just a test, remove it later
 // use the get-color function instead
 @each $color, $shades in $colors {
     @if $color != neutral {

@@ -108,103 +108,228 @@ p {
   }
 }
 .button-primary-100 {
-  color: hsl(14deg, 100%, 80%);
-  background-color: #99e7ff;
+  color: #edf0fd;
+  background-color: #fdf9ed;
 }
 
 .button-primary-200 {
-  color: hsl(14deg, 100%, 70%);
-  background-color: #66dbff;
+  color: #beccf8;
+  background-color: #f8ebbe;
 }
 
 .button-primary-300 {
-  color: hsl(14deg, 100%, 60%);
-  background-color: #33cfff;
+  color: #90a7f3;
+  background-color: #f3dc90;
 }
 
 .button-primary-400 {
-  color: hsl(12deg, 100%, 43%);
-  background-color: #00afdb;
+  color: #6283ef;
+  background-color: #efce62;
 }
 
 .button-primary-500 {
-  color: hsl(14deg, 100%, 20%);
-  background-color: #004e66;
+  color: #345eea;
+  background-color: #eabf34;
 }
 
-.button-article-100 {
-  color: hsl(219deg, 89%, 80%);
-  background-color: #f9da9f;
+.button-primary-600 {
+  color: #1643d4;
+  background-color: #d4a816;
 }
 
-.button-article-200 {
-  color: hsl(219deg, 89%, 70%);
-  background-color: #f7c76e;
+.button-primary-700 {
+  color: #1134a6;
+  background-color: #a68311;
 }
 
-.button-article-300 {
-  color: hsl(219deg, 89%, 60%);
-  background-color: #f4b43e;
+.button-primary-800 {
+  color: #0d2678;
+  background-color: #785f0d;
 }
 
-.button-article-400 {
-  color: hsl(212deg, 61%, 37%);
-  background-color: #986225;
+.button-primary-900 {
+  color: #08174a;
+  background-color: #4a3a08;
 }
 
-.button-article-500 {
-  color: hsl(219deg, 89%, 20%);
-  background-color: #604106;
+.button-secondary-100 {
+  color: #f0f3fa;
+  background-color: #faf6f0;
 }
 
-.button-youtube-100 {
-  color: hsl(345deg, 88%, 80%);
-  background-color: #9ff9e2;
+.button-secondary-200 {
+  color: #c9d6ee;
+  background-color: #eee0c9;
 }
 
-.button-youtube-200 {
-  color: hsl(345deg, 88%, 70%);
-  background-color: #6ff6d4;
+.button-secondary-300 {
+  color: #a3b9e1;
+  background-color: #e1caa3;
 }
 
-.button-youtube-300 {
-  color: hsl(345deg, 88%, 60%);
-  background-color: #3ff3c6;
+.button-secondary-400 {
+  color: #7c9dd5;
+  background-color: #d5b47c;
 }
 
-.button-youtube-400 {
-  color: hsl(345deg, 88%, 46%);
-  background-color: #0edda9;
+.button-secondary-500 {
+  color: #5680c8;
+  background-color: #c89e56;
 }
 
-.button-youtube-500 {
-  color: hsl(345deg, 88%, 20%);
-  background-color: #066049;
+.button-secondary-600 {
+  color: #3965b1;
+  background-color: #b18539;
 }
 
-.button-course-100 {
-  color: hsl(176deg, 66%, 70%);
-  background-color: #e58087;
+.button-secondary-700 {
+  color: #2d4f8b;
+  background-color: #8b682d;
 }
 
-.button-course-200 {
-  color: hsl(176deg, 66%, 60%);
-  background-color: #dc565f;
+.button-secondary-800 {
+  color: #203964;
+  background-color: #644b20;
 }
 
-.button-course-300 {
-  color: hsl(176deg, 66%, 40%);
-  background-color: #a9232c;
+.button-secondary-900 {
+  color: #14233e;
+  background-color: #3e2e14;
 }
 
-.button-course-400 {
-  color: hsl(176deg, 66%, 30%);
-  background-color: #7f1a21;
+.button-rose-100 {
+  color: #ffebf4;
+  background-color: #ebfff5;
 }
 
-.button-course-500 {
-  color: hsl(176deg, 66%, 20%);
-  background-color: #551116;
+.button-rose-200 {
+  color: #ffb8d9;
+  background-color: #b8ffde;
+}
+
+.button-rose-300 {
+  color: #ff85be;
+  background-color: #85ffc6;
+}
+
+.button-rose-400 {
+  color: #ff52a3;
+  background-color: #52ffae;
+}
+
+.button-rose-500 {
+  color: #ff1f87;
+  background-color: #1fff96;
+}
+
+.button-rose-600 {
+  color: #eb006d;
+  background-color: #00eb7d;
+}
+
+.button-rose-700 {
+  color: #b80056;
+  background-color: #00b862;
+}
+
+.button-rose-800 {
+  color: #85003e;
+  background-color: #008547;
+}
+
+.button-rose-900 {
+  color: #520026;
+  background-color: #00522c;
+}
+
+.button-turq-100 {
+  color: #dffbf8;
+  background-color: #fbdfe3;
+}
+
+.button-turq-200 {
+  color: #b1f6ed;
+  background-color: #f6b1ba;
+}
+
+.button-turq-300 {
+  color: #83f1e3;
+  background-color: #f18392;
+}
+
+.button-turq-400 {
+  color: #55ecd8;
+  background-color: #ec5569;
+}
+
+.button-turq-500 {
+  color: #27e7cd;
+  background-color: #e72741;
+}
+
+.button-turq-600 {
+  color: #16c5ae;
+  background-color: #c5162d;
+}
+
+.button-turq-700 {
+  color: #119786;
+  background-color: #971123;
+}
+
+.button-turq-800 {
+  color: #0c6a5d;
+  background-color: #6a0c18;
+}
+
+.button-turq-900 {
+  color: #073c35;
+  background-color: #3c070e;
+}
+
+.button-sky-100 {
+  color: #ccf9ff;
+  background-color: #ffd2cc;
+}
+
+.button-sky-200 {
+  color: #99f3ff;
+  background-color: #ffa599;
+}
+
+.button-sky-300 {
+  color: #66edff;
+  background-color: #ff7866;
+}
+
+.button-sky-400 {
+  color: #33e7ff;
+  background-color: #ff4b33;
+}
+
+.button-sky-500 {
+  color: #00e1ff;
+  background-color: #ff1e00;
+}
+
+.button-sky-600 {
+  color: #00b4cc;
+  background-color: #cc1800;
+}
+
+.button-sky-700 {
+  color: #008799;
+  background-color: #991200;
+}
+
+.button-sky-800 {
+  color: #005a66;
+  background-color: #660c00;
+}
+
+.button-sky-900 {
+  color: #002d33;
+  background-color: #330600;
 }
 
 /* Hamburger */
@@ -450,8 +575,8 @@ header {
   gap: 2rem;
 }
 .hero-text span {
-  background: rgb(51, 94, 234);
-  background: linear-gradient(45deg, rgb(51, 94, 234), rgb(93, 255, 99));
+  background: hsl(226deg, 81%, 56%);
+  background: linear-gradient(45deg, hsl(226deg, 81%, 56%), hsl(172deg, 80%, 53%));
   background-size: 500%;
   background-position: left;
   -webkit-background-clip: text;
@@ -539,7 +664,7 @@ header {
 
 .about p, .about i, .about li {
   color: #ffffff;
-  text-shadow: 2px 2px 10px rgb(84, 127, 200);
+  text-shadow: 2px 2px 10px hsl(218deg, 51%, 56%);
 }
 
 /* Bubbles */
@@ -592,7 +717,7 @@ header {
   transition: color 0.3s;
 }
 .tablinks:hover {
-  color: rgb(51, 94, 234);
+  color: hsl(226deg, 81%, 56%);
   /*fix later*/
 }
 @media (min-width: 768px) {
@@ -602,7 +727,7 @@ header {
 }
 
 .tablinks.active {
-  color: rgb(255, 31, 135);
+  color: hsl(332deg, 100%, 56%);
   transition: color 0.9s;
 }
 
@@ -620,7 +745,7 @@ header {
 .tab .active::after {
   content: "";
   display: block;
-  border-bottom: 4px solid rgb(255, 31, 135);
+  border-bottom: 4px solid hsl(332deg, 100%, 56%);
   border-radius: 5px;
   width: 2rem;
   position: relative;
@@ -730,7 +855,7 @@ header {
   transition: 0.3s;
 }
 .project-link:hover {
-  color: rgb(255, 31, 135);
+  color: hsl(332deg, 100%, 56%);
 }
 
 .project-info {

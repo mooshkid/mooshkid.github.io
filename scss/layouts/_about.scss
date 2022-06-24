@@ -101,7 +101,7 @@
     }
 }
 .tablinks.active {
-    color: $pink-color;
+    color: $rose;
     transition: color 0.9s;
 }
 .tabcontent {
@@ -118,7 +118,7 @@
         &::after {
             content: "";
             display: block;
-            border-bottom: 4px solid $pink-color;
+            border-bottom: 4px solid $rose;
             border-radius: 5px;
             width: 2rem;
             position: relative;
