@@ -1,6 +1,71 @@
 // This loop creates TONS of css classes
 // just a test, remove it later
 // use the get-color function instead
+
+// Color map 
+$colors: (
+    primary: (
+        100: lighten($primary-color, 40%),
+        200: lighten($primary-color, 30%),
+        300: lighten($primary-color, 20%),
+        400: lighten($primary-color, 10%),
+        500: lighten($primary-color, 0%),
+        600: darken($primary-color, 10%),
+        700: darken($primary-color, 20%),
+        800: darken($primary-color, 30%),
+        900: darken($primary-color, 40%),
+    ),
+    secondary: (
+        100: lighten($secondary-color, 40%),
+        200: lighten($secondary-color, 30%),
+        300: lighten($secondary-color, 20%),
+        400: lighten($secondary-color, 10%),
+        500: lighten($secondary-color, 0%),
+        600: darken($secondary-color, 10%),
+        700: darken($secondary-color, 20%),
+        800: darken($secondary-color, 30%),
+        900: darken($secondary-color, 40%),
+    ),
+    rose: (
+        100: lighten($rose, 40%),
+        200: lighten($rose, 30%),
+        300: lighten($rose, 20%),
+        400: lighten($rose, 10%),
+        500: lighten($rose, 0%),
+        600: darken($rose, 10%),
+        700: darken($rose, 20%),
+        800: darken($rose, 30%),
+        900: darken($rose, 40%),
+    ),
+    turq: (
+        100: lighten($turquoise, 40%),
+        200: lighten($turquoise, 30%),
+        300: lighten($turquoise, 20%),
+        400: lighten($turquoise, 10%),
+        500: lighten($turquoise, 0%),
+        600: darken($turquoise, 10%),
+        700: darken($turquoise, 20%),
+        800: darken($turquoise, 30%),
+        900: darken($turquoise, 40%),
+    ),
+    sky: (
+        100: lighten($sky-blue-crayola, 40%),
+        200: lighten($sky-blue-crayola, 30%),
+        300: lighten($sky-blue-crayola, 20%),
+        400: lighten($sky-blue-crayola, 10%),
+        500: lighten($sky-blue-crayola, 0%),
+        600: darken($sky-blue-crayola, 10%),
+        700: darken($sky-blue-crayola, 20%),
+        800: darken($sky-blue-crayola, 30%),
+        900: darken($sky-blue-crayola, 40%),
+    ),
+    neutral: (
+        500: $ghost-white,
+    ),
+);
+
+
+
 @each $color, $shades in $colors {
     @if $color != neutral {
         @each $shade, $value in $shades {

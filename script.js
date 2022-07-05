@@ -1,3 +1,8 @@
+// Prints clicked element on console 
+document.addEventListener('click', (e) => {
+    console.log(e.target.nodeName);
+})
+
 // MOBILE MENU
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -14,7 +19,7 @@ function mobileMenu() {
 window.addEventListener("mouseup", function (event) {
     if (
         event.target != navMenu &&
-        event.target.parentNode != navMenu &&
+        // event.target.parentNode != navMenu &&
         event.target != hamburger &&
         event.target != document.querySelector(".hamburger-inner") &&
         event.target != document.querySelector(".hamburger-box")
@@ -24,6 +29,7 @@ window.addEventListener("mouseup", function (event) {
         backdrop.classList.remove("active");
     }
 });
+
 
 // DISABLE CSS TRANSITION ON MEDIA QUERY
 stopResponsiveTransition();
