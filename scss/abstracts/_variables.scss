@@ -1,17 +1,32 @@
 // Color variables 
+
+//BLUE SHADES //
 $primary-color: hsl(226, 81%, 56%); //rgb(51, 94, 234); //#335eea;
-$secondary-color: hsl(218, 51%, 56%); //rgb(84, 127, 200); //#547fc8;
-$rose: hsl(332, 100%, 56%); //rgb(255, 31, 135); //#ff1f87;
-$turquoise: hsl(172, 80%, 53%); //rgb(41, 231, 205); //#29E7CD;
+
+// $secondary-color: hsl(218, 51%, 56%); //rgb(84, 127, 200); //#547fc8;
+$secondary-color: hsl(220, 73%, 58%); //rgb(69, 121, 226); //#4579e2;
+
+$tertiary-color: #4e5da6;
+// $tertiary-color: #3461c1;
+
+
+// TURQUOISE SHADES //
+// $turquoise: hsl(172, 80%, 53%); //rgb(41, 231, 205); //#29E7CD;
+$turquoise: turquoise;
 $sky-blue-crayola: hsl(187, 100%, 50%); //rgb(0, 226, 255); //#00E2FF;
+
+
+
+
+$rose: hsl(332, 100%, 56%); //rgb(255, 31, 135); //#ff1f87;
 
 $white-smoke: #f3f3f3;
 $isabelline: #f4ebe8;
 $ghost-white: #f7f7ff;
 
-// create grey color
+// CREATE grey color LATER
 
-$gradient-color: linear-gradient(45deg, $primary-color, $turquoise);
+$gradient-color: linear-gradient(45deg, $primary-color, $sky-blue-crayola);
 
 
 // Other 

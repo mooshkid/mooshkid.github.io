@@ -1,5 +1,5 @@
-/* divider-wave */
-.divider-wave {
+/* waves */
+.waves {
     display: block;
     width: 100%;
     height: 60px;
@@ -11,32 +11,37 @@
     left:0px;
     float:left;
     background-color: transparent;
-    .wave1 {
-        use {
-            animation: left-wave 10s linear infinite;
-        }
-    }
-    .wave2 {
-        use {
-            animation: right-wave 8s linear infinite;
-        }
-    }
-    .wave3 {
-        use {
-            animation: left-wave 6s linear infinite;
-        }
-    }
-    .wave4 {
-        use {
-            animation: right-wave 4s linear infinite;
-        }
-    }
     
     @include mq(tablet) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
 }
+.wave1 {
+    use {
+        animation: left-wave 10s linear infinite;
+        fill: $rose;
+    }
+}
+.wave2 {
+    use {
+        animation: right-wave 8s linear infinite;
+        fill: $secondary-color;
+    }
+}
+.wave3 {
+    use {
+        animation: left-wave 6s linear infinite;
+        fill: $tertiary-color;
+    }
+}
+.wave4 {
+    use {
+        animation: right-wave 4s linear infinite;
+        fill: $turquoise;
+    }
+}
+
 @keyframes left-wave {
     from {
         transform: translateX(85px);
@@ -54,8 +59,8 @@
     }
 }
 
-/* divider-wave2 */
-.divider-wave2 {
+/* divider-wave */
+.divider-wave {
     display: block;
     width: 100%;
     height: 60px;

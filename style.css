@@ -335,8 +335,8 @@ section {
   fill: white;
   opacity: 0.8;
 }
-/* divider-wave */
-.divider-wave {
+/* waves */
+.waves {
     display: block;
     width: 100%;
     height: 60px;
@@ -597,7 +597,7 @@ footer {
     .col {
         flex: 1;
     }
-    .divider-wave {
+    .waves {
         grid-column-start: 1;
         grid-column-end: 3;
     }

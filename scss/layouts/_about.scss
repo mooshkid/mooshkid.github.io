@@ -1,6 +1,6 @@
 /* About Section */
 .about {
-    background: turquoise;
+    background: $turquoise;
     padding: 7rem 0;
 }
 .container {
@@ -32,7 +32,7 @@
     &::after {
         content: "";
         display: block;
-        border-bottom: 15px solid #ff1f87;
+        border-bottom: 15px solid $rose;
         border-radius: 10px;
         box-shadow: 2px 2px 10px hotpink;
         width: 8rem;
