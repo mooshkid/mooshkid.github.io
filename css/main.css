@@ -94,9 +94,19 @@ p {
   position: fixed;
   right: 3vw;
   bottom: 3vw;
-  width: 20vw;
+  width: min(80px, 20vw);
   z-index: 3;
-  animation: wiggle 3s infinite alternate;
+  -webkit-animation: wiggle 3s infinite alternate;
+          animation: wiggle 3s infinite alternate;
+}
+
+@-webkit-keyframes wiggle {
+  from {
+    transform: rotate(-35deg);
+  }
+  to {
+    transform: rotate(35deg);
+  }
 }
 
 @keyframes wiggle {
@@ -412,21 +422,34 @@ p {
   background-color: transparent;
 }
 .divider-wave .wave1 use {
-  animation: left-wave 10s linear infinite;
+  -webkit-animation: left-wave 10s linear infinite;
+          animation: left-wave 10s linear infinite;
 }
 .divider-wave .wave2 use {
-  animation: right-wave 8s linear infinite;
+  -webkit-animation: right-wave 8s linear infinite;
+          animation: right-wave 8s linear infinite;
 }
 .divider-wave .wave3 use {
-  animation: left-wave 6s linear infinite;
+  -webkit-animation: left-wave 6s linear infinite;
+          animation: left-wave 6s linear infinite;
 }
 .divider-wave .wave4 use {
-  animation: right-wave 4s linear infinite;
+  -webkit-animation: right-wave 4s linear infinite;
+          animation: right-wave 4s linear infinite;
 }
 @media (min-width: 768px) {
   .divider-wave {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+}
+
+@-webkit-keyframes left-wave {
+  from {
+    transform: translateX(85px);
+  }
+  to {
+    transform: translateX(-90px);
   }
 }
 
@@ -436,6 +459,14 @@ p {
   }
   to {
     transform: translateX(-90px);
+  }
+}
+@-webkit-keyframes right-wave {
+  from {
+    transform: translateX(-90px);
+  }
+  to {
+    transform: translateX(85px);
   }
 }
 @keyframes right-wave {
@@ -461,7 +492,8 @@ p {
   background-color: transparent;
 }
 .divider-wave2 .wave2 use {
-  animation: right-wave 8s linear infinite;
+  -webkit-animation: right-wave 8s linear infinite;
+          animation: right-wave 8s linear infinite;
 }
 
 /* Header */
@@ -576,7 +608,17 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: text-animation 2s infinite alternate;
+  -webkit-animation: text-animation 2s infinite alternate;
+          animation: text-animation 2s infinite alternate;
+}
+
+@-webkit-keyframes text-animation {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 100%;
+  }
 }
 
 @keyframes text-animation {
@@ -624,7 +666,8 @@ header {
 .profile-picture img {
   height: 300px;
   width: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   filter: drop-shadow(2px 2px 10px aquamarine);
 }
@@ -711,8 +754,7 @@ header {
   transition: color 0.3s;
 }
 .tablinks:hover {
-  color: hsl(226deg, 81%, 56%);
-  /*fix later*/
+  color: hsl(226deg, 81%, 56%); /*fix later*/
 }
 @media (min-width: 768px) {
   .tablinks {
@@ -802,43 +844,63 @@ header {
 
 .projects {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 2rem;
+}
+@media (min-width: 768px) {
+  .projects {
+    flex-direction: row;
+  }
 }
 
 .project {
-  text-align: right;
   background: #4e5da6;
   border-radius: 10px;
   box-shadow: 2px 2px 10px turquoise;
 }
-.project:nth-of-type(even) .project-content {
-  align-items: flex-start;
-  text-align: start;
-}
-.project:nth-of-type(even) .project-tags {
-  justify-content: flex-start;
-}
 @media (min-width: 768px) {
-  .project:nth-of-type(even) {
-    flex-direction: row-reverse;
+  .project {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) {
+  .project {
+    width: 30%;
   }
 }
 .project .col {
   padding: 1rem;
 }
-.project img {
+.project .col img {
   border-radius: 10px;
   box-shadow: 2px 2px 10px white;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .project-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   justify-content: center;
+  gap: 1rem;
+}
+
+.project-info {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+.project-tags {
+  display: flex;
   gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.project-tags li {
+  font-size: 0.9rem;
+  border-radius: 4px;
+  padding: 2px 5px;
+  background: #4579e2;
 }
 
 .project-link {
@@ -850,25 +912,6 @@ header {
 }
 .project-link:hover {
   color: hsl(332deg, 100%, 56%);
-}
-
-.project-info {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.2rem;
-}
-
-.project-tags {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-.project-tags li {
-  font-size: 0.9rem;
-  border-radius: 4px;
-  padding: 2px 5px;
-  background: #4579e2;
 }
 
 /* Contact Section*/
@@ -932,4 +975,4 @@ footer {
   text-shadow: 2px 2px 10px #000;
   font-size: 1rem;
   font-weight: 400;
-}
+}/*# sourceMappingURL=main.css.map */
