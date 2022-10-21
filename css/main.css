@@ -407,7 +407,6 @@ p {
   transition: bottom 0.15s ease, transform 0.15s 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-/* waves */
 .waves {
   display: block;
   width: 100%;
@@ -452,6 +451,12 @@ p {
   fill: turquoise;
 }
 
+.wave5 use {
+  -webkit-animation: right-wave 10s linear infinite;
+          animation: right-wave 10s linear infinite;
+  fill: #f3f3f3;
+}
+
 @-webkit-keyframes left-wave {
   from {
     transform: translateX(85px);
@@ -485,7 +490,6 @@ p {
     transform: translateX(85px);
   }
 }
-/* divider-wave */
 .divider-wave {
   display: block;
   width: 100%;
@@ -531,6 +535,7 @@ header {
 .logo {
   height: 100%;
   padding: 0 10px;
+  filter: drop-shadow(1px 1px 1px black);
 }
 
 .nav-menu {
@@ -640,6 +645,7 @@ header {
 .hero-img {
   width: 90%;
   margin: 0 auto;
+  filter: drop-shadow(2px 2px 6px black);
 }
 
 .minions {
@@ -843,7 +849,6 @@ header {
   font-size: 1.5rem;
 }
 
-/* Projects Section */
 #projects {
   background: hsl(220deg, 73%, 58%);
   padding: 7rem 0;
@@ -864,7 +869,7 @@ header {
 .project {
   background: #4e5da6;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px turquoise;
+  box-shadow: 2px 2px 10px hsl(187deg, 100%, 50%);
 }
 @media (min-width: 768px) {
   .project {
@@ -882,8 +887,6 @@ header {
 .project .col img {
   border-radius: 10px;
   box-shadow: 2px 2px 10px white;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .project-content {
@@ -908,11 +911,11 @@ header {
   font-size: 0.9rem;
   border-radius: 4px;
   padding: 2px 5px;
-  background: #4579e2;
+  background: hsl(220deg, 73%, 58%);
 }
 
 .project-link {
-  color: #00e2ff;
+  color: hsl(187deg, 100%, 50%);
   font-weight: bold;
   display: flex;
   gap: 0.5rem;
@@ -933,7 +936,6 @@ header {
   padding: 7rem 0;
 }
 
-/* Footer */
 footer {
   padding: 3rem 0;
   width: 100%;
@@ -951,6 +953,7 @@ footer {
   z-index: -2;
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .tidehunter {
@@ -962,6 +965,7 @@ footer {
   z-index: -1;
   width: 100%;
   height: 100%;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
 .socials {
@@ -973,14 +977,14 @@ footer {
 }
 .socials a {
   font-size: 2rem;
-  color: whitesmoke;
+  color: #f3f3f3;
   text-shadow: 2px 2px 10px #000;
 }
 
 .copyright {
   position: relative;
   text-align: center;
-  color: whitesmoke;
+  color: #f3f3f3;
   text-shadow: 2px 2px 10px #000;
   font-size: 1rem;
   font-weight: 400;

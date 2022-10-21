@@ -1,4 +1,4 @@
-/* waves */
+// waves
 .waves {
     display: block;
     width: 100%;
@@ -41,6 +41,12 @@
         fill: $turquoise;
     }
 }
+.wave5 {
+    use {
+        animation: right-wave 10s linear infinite;
+        fill: $white-smoke;
+    }
+}
 
 @keyframes left-wave {
     from {
@@ -59,7 +65,7 @@
     }
 }
 
-/* divider-wave */
+// divider-wave
 .divider-wave {
     display: block;
     width: 100%;

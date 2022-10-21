@@ -28,7 +28,7 @@
 .title-section {
     margin-bottom: 2rem;
     color: #ffffff;
-    text-shadow: 2px 2px 5px #484848;
+    text-shadow: $text-shadow;
     &::after {
         content: "";
         display: block;
@@ -83,7 +83,7 @@
     font-weight: 700;
     font-family: "Comfortaa", sans-serif;
     color: white;
-    text-shadow: 2px 2px 5px #484848;
+    text-shadow: $text-shadow;
     background-color: inherit;
     float: left;
     border: none;
