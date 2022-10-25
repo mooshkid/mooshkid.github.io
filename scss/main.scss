@@ -1,21 +1,21 @@
-@import 'abstracts/variables';
-@import 'abstracts/functions';
-@import 'abstracts/mixins';
+@import "abstracts/variables";
+@import "abstracts/colors";
+@import "abstracts/functions";
+@import "abstracts/mixins";
 
-@import 'base/reset';
-@import 'base/base';
-// @import 'base/colors';
-@import 'base/typography';
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
 
-@import 'components/anchor';
-@import 'components/buttons';
-@import 'components/hamburger';
-@import 'components/nav';
-@import 'components/waves';
+@import "components/anchor";
+@import "components/buttons";
+@import "components/hamburger";
+@import "components/nav";
+@import "components/waves";
 
-@import 'layouts/header';
-@import 'layouts/hero';
-@import 'layouts/about';
-@import 'layouts/project';
-@import 'layouts/contact';
-@import 'layouts/footer';
+@import "layouts/header";
+@import "layouts/hero";
+@import "layouts/about";
+@import "layouts/project";
+@import "layouts/contact";
+@import "layouts/footer";
