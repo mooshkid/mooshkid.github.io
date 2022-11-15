@@ -251,55 +251,16 @@ document.getElementById("hobbies_tab").addEventListener("click", function () {
 
 
 // PROJECTS
-// loop each .project class
-// const projects = gsap.utils.toArray(".project");
-// projects.forEach((project) => {
-//     gsap.fromTo(project, {
-//         y: 100,
-//         // x: -100,
-//         duration: 1.5,
-//         autoAlpha: 0,
-//         ease: "sine.out",
-//         scrollTrigger: {
-//             trigger: project,
-//             start: "top 80%",
-//             markers: true
-//         },
-//     },
-//     {
-//         y: 0,
-//         autoAlpha: 1,
-//         duration: 5
-//     }
-//     );
-// });
-
-// const gup = gsap.utils.toArray('.project');
-// gup.forEach(item => {
-//     gsap.fromTo(item, {
-//         y: 100,
-//         autoAlpha: 0,
-//     },
-//     {
-//         y:0,
-//         autoAlpha: 1,
-//         scrollTrigger: {
-//             trigger: item,
-//             start: "top 90%",
-//             // markers: true,
-//         },
-//         ease: "sine.out",
-//     })
-// })
-
 gsap.from(".project", {
-
+    scrollTrigger: {
+        trigger: ".projects",
+        start: "top 80%",
+        // markers: true,
+    },
     y: 250,
     autoAlpha: 0,
-    stagger: {
-        each: 0.3,
-        ease: "powe.in",
-    },
+    stagger: 0.3,
+    ease: "sine.out"
 });
 
 
