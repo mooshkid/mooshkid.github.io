@@ -3,6 +3,7 @@ document.addEventListener('click', (e) => {
     console.log(e.target.nodeName);
 })
 
+
 // MOBILE MENU
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -49,6 +50,7 @@ function stopResponsiveTransition() {
         }, 100);
     });
 }
+
 
 // BUBBLE ANIMATIONS
 gsap.registerPlugin(MotionPathPlugin);
@@ -259,8 +261,9 @@ gsap.from(".project", {
     },
     y: 250,
     autoAlpha: 0,
-    stagger: 0.3,
-    ease: "sine.out"
+    stagger: 0.5,
+    ease: "sine.out",
+    duration: 1.5,
 });
 
 
