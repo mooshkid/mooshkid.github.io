@@ -15,7 +15,16 @@
 .project {
     background: $tertiary-color;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px $sky-blue-crayola;
+    animation: glow 2s infinite alternate-reverse;
+    @keyframes glow {
+        from {
+            box-shadow: 0 0 10px $white-smoke;
+        }
+        to {
+            box-shadow: 0 0 15px $sky-blue-crayola;
+        }
+    }
+
     @include mq(tablet) {
         width: 45%;
     }
@@ -24,16 +33,15 @@
     }
 
     .col {
-        padding : 1rem;
+        padding: 1rem;
         img {
             border-radius: 10px;
             box-shadow: 2px 2px 10px white;
             // object-fit: cover;
         }
     }
-
 }
-.project-content {    
+.project-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,4 +74,3 @@
         color: $rose;
     }
 }
-

@@ -869,7 +869,23 @@ header {
 .project {
   background: #4e5da6;
   border-radius: 10px;
-  box-shadow: 2px 2px 10px hsl(187deg, 100%, 50%);
+  animation: glow 2s infinite alternate-reverse;
+}
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 10px #f3f3f3;
+  }
+  to {
+    box-shadow: 0 0 15px hsl(187deg, 100%, 50%);
+  }
+}
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #f3f3f3;
+  }
+  to {
+    box-shadow: 0 0 15px hsl(187deg, 100%, 50%);
+  }
 }
 @media (min-width: 768px) {
   .project {
