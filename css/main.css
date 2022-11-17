@@ -52,18 +52,30 @@ body.stop-transition .nav-menu {
   margin: 0 auto;
 }
 
-.col {
-  padding: 1rem 0;
+.title-section {
+  margin-bottom: 2rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px #484848;
 }
+.title-section::after {
+  content: "";
+  display: block;
+  border-bottom: 15px solid hsl(332deg, 100%, 56%);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px hotpink;
+  width: 8rem;
+  position: absolute;
+  left: 0.5em;
+  bottom: -0.1em;
+  z-index: -1;
+}
+
 @media (min-width: 768px) {
   .col {
     flex: 1;
   }
 }
 
-.row {
-  margin-bottom: 4rem;
-}
 @media (min-width: 768px) {
   .row {
     display: flex;
@@ -675,10 +687,17 @@ header {
   background: turquoise;
   padding: 7rem 0;
 }
+.about p,
+.about i,
+.about li {
+  color: #ffffff;
+  text-shadow: 2px 2px 10px hsl(220deg, 73%, 58%);
+}
 
 .profile-picture {
   text-align: center;
   position: relative;
+  margin-bottom: 2rem;
 }
 .profile-picture img {
   height: 300px;
@@ -694,34 +713,17 @@ header {
   }
 }
 
-.title-section {
-  margin-bottom: 2rem;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #484848;
+@media (min-width: 768px) {
+  .profile-text {
+    flex: 2;
+  }
 }
-.title-section::after {
-  content: "";
-  display: block;
-  border-bottom: 15px solid hsl(332deg, 100%, 56%);
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px hotpink;
-  width: 8rem;
-  position: relative;
-  left: 1rem;
-  bottom: 0.8rem;
-  z-index: -1;
-}
-
-.about p,
-.about i,
-.about li {
-  color: #ffffff;
-  text-shadow: 2px 2px 10px hsl(220deg, 73%, 58%);
+.profile-text p {
+  margin-bottom: 3rem;
 }
 
 /* Bubbles */
 .bubble_container {
-  height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
@@ -751,14 +753,7 @@ header {
 .tab {
   overflow: hidden;
   z-index: 1;
-}
-@media (min-width: 768px) {
-  .tab {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex: 1;
-  }
+  margin-bottom: 2rem;
 }
 
 .tablinks {
@@ -778,11 +773,6 @@ header {
 .tablinks:hover {
   color: hsl(226deg, 81%, 56%); /*fix later*/
 }
-@media (min-width: 768px) {
-  .tablinks {
-    margin-left: 15vw;
-  }
-}
 
 .tablinks.active {
   color: hsl(332deg, 100%, 56%);
@@ -791,7 +781,6 @@ header {
 
 .tabcontent {
   display: none;
-  padding-top: 2rem;
   color: white;
 }
 @media (min-width: 768px) {
@@ -828,7 +817,6 @@ header {
   justify-content: center;
   align-items: center;
   flex: 1;
-  gap: 3rem;
 }
 
 .skills-item {

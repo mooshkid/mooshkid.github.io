@@ -14,6 +14,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/MotionPathPlugin.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" defer></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js" defer></script> -->
         <script src="script.js" defer></script>
     </head>
     <body>
@@ -40,7 +41,7 @@
             <section class="hero">
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1>Hi, I'm <span>Masa</span></h1>
+                        <h1>Hi, I'm <span>Masa</span><p class="typewriter-text"></p></h1>
                         <p>I like to eat, sleep and play games</p>
                     </div>
                     <div class="hero-img">
@@ -132,70 +133,71 @@
                                 </svg>
                             </div>      
                         </div>
-                        <div class="col">
+                        <div class="profile-text col">
                             <h2 class="title-section">About me</h2>
                             <p>A self taught developer. I enjoy learning about the latest techonological innovations and exploring new ideas to put into practice.</p> 
-                        </div>  
-                    </div>                    
-                    <div class="row">    
-                        <div class="tab">
-                            <button class="tablinks skills-button" onclick="clickTab(event, 'skills')" id="skills_tab">Skills</button>
-                            <!--<button class="tablinks" onclick="clickTab(event, 'education')">Education</button>-->
-                            <button class="tablinks hobbies-button" onclick="clickTab(event, 'hobbies')" id="hobbies_tab">Hobbies</button>
-                        </div>
-                        <div id="skills" class="tabcontent">
-                            <div class="skills-row">
-                                <div class="skills-col">
-                                    <div class="skills-item">
-                                        <i class="fa-brands fa-html5"></i>
-                                        <p class="skills-name">HTML</p>
-                                    </div>
-                                    <div class="skills-item">
-                                        <i class="fa-brands fa-figma"></i>
-                                        <p class="skills-name">Figma</p>
-                                    </div>
+                            <div class="tabs col">    
+                                <div class="tab">
+                                    <button class="tablinks skills-button" onclick="clickTab(event, 'skills')" id="skills_tab">Skills</button>
+                                    <!--<button class="tablinks" onclick="clickTab(event, 'education')">Education</button>-->
+                                    <button class="tablinks hobbies-button" onclick="clickTab(event, 'hobbies')" id="hobbies_tab">Hobbies</button>
                                 </div>
-                                <div class="skills-col">
-                                    <div class="skills-item">
-                                        <i class="fa-brands fa-css3-alt"></i>
-                                        <p class="skills-name">CSS</p>
+                                <div id="skills" class="tabcontent">
+                                    <div class="skills-row">
+                                        <div class="skills-col">
+                                            <div class="skills-item">
+                                                <i class="fa-brands fa-html5"></i>
+                                                <p class="skills-name">HTML</p>
+                                            </div>
+                                            <div class="skills-item">
+                                                <i class="fa-brands fa-figma"></i>
+                                                <p class="skills-name">Figma</p>
+                                            </div>
+                                        </div>
+                                        <div class="skills-col">
+                                            <div class="skills-item">
+                                                <i class="fa-brands fa-css3-alt"></i>
+                                                <p class="skills-name">CSS</p>
+                                            </div>
+                                            <div class="skills-item">
+                                                <i class="fa-brands fa-python"></i>
+                                                <p class="skills-name">Python</p>
+                                            </div>
+                                            <div class="skills-item">
+                                                <i class="fa-solid fa-database"></i>
+                                                <p class="skills-name">sql | cql</p>
+                                            </div>
+                                        </div>
+                                        <div class="skills-col">
+                                            <div class="skills-item">
+                                                <i class="fa-brands fa-js-square"></i>
+                                                <p class="skills-name">JavaScript</p>
+                                            </div>
+                                            <div class="skills-item">
+                                                <i class="fa-brands fa-wordpress"></i>
+                                                <p class="skills-name">WordPress</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="skills-item">
-                                        <i class="fa-brands fa-python"></i>
-                                        <p class="skills-name">Python</p>
-                                    </div>
-                                    <div class="skills-item">
-                                        <i class="fa-solid fa-database"></i>
-                                        <p class="skills-name">sql | cql</p>
-                                    </div>
-                                </div>
-                                <div class="skills-col">
-                                    <div class="skills-item">
-                                        <i class="fa-brands fa-js-square"></i>
-                                        <p class="skills-name">JavaScript</p>
-                                    </div>
-                                    <div class="skills-item">
-                                        <i class="fa-brands fa-wordpress"></i>
-                                        <p class="skills-name">WordPress</p>
-                                    </div>
+                                </div>                      
+                                <!-- <div id="education" class="tabcontent">
+                                    <p>No hablo ingles</p>
+                                </div>                       -->
+                                <div id="hobbies" class="tabcontent">
+                                    <ul class="hobbies-list">
+                                        <li class="hobbies-item"><i class="fas fa-gamepad"></i>Gaming</li>
+                                        <li class="hobbies-item"><i class="fas fa-music"></i>Listening to music</li>
+                                        <li class="hobbies-item"><i class="fa-solid fa-tv"></i>Watching Esports & TV</li>                                
+                                        <li class="hobbies-item"><i class="fa-brands fa-reddit"></i>Browsing reddit</li>
+                                        <li class="hobbies-item"><i class="fa-solid fa-mug-saucer"></i>Drinking coffee</li>
+                                        <li class="hobbies-item"><i class="fa-solid fa-pizza-slice"></i>Eating pizza</li>
+                                        <li class="hobbies-item"><i class="fa-solid fa-bed"></i>Sleeping</li>
+                                    </ul>
                                 </div>
                             </div>
-                        </div>                      
-                        <!-- <div id="education" class="tabcontent">
-                            <p>No hablo ingles</p>
-                        </div>                       -->
-                        <div id="hobbies" class="tabcontent">
-                            <ul class="hobbies-list">
-                                <li class="hobbies-item"><i class="fas fa-gamepad"></i>Gaming</li>
-                                <li class="hobbies-item"><i class="fas fa-music"></i>Listening to music</li>
-                                <li class="hobbies-item"><i class="fa-solid fa-tv"></i>Watching Esports & TV</li>                                
-                                <li class="hobbies-item"><i class="fa-brands fa-reddit"></i>Browsing reddit</li>
-                                <li class="hobbies-item"><i class="fa-solid fa-mug-saucer"></i>Drinking coffee</li>
-                                <li class="hobbies-item"><i class="fa-solid fa-pizza-slice"></i>Eating pizza</li>
-                                <li class="hobbies-item"><i class="fa-solid fa-bed"></i>Sleeping</li>
-                            </ul>
-                        </div>
-                    </div>
+                        </div>  
+                    </div>                    
+
                 </div>
                 <svg class="divider-wave"
                     xmlns="http://www.w3.org/2000/svg"

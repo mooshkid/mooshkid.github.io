@@ -18,14 +18,32 @@ body.stop-transition .nav-menu {
     max-width: 90%;
     margin: 0 auto;
 }
+
+.title-section {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-shadow: $text-shadow;
+    &::after {
+        content: "";
+        display: block;
+        border-bottom: 15px solid $rose;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px hotpink;
+        width: 8rem;
+        position: absolute;
+        left: 0.5em;
+        bottom: -0.1em;
+        z-index: -1;
+    }
+}
+
 .col {
-    padding: 1rem 0;
     @include mq(tablet) {
         flex: 1;
     }
 }
 .row {
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
 
     @include mq(tablet) {
         display: flex;
