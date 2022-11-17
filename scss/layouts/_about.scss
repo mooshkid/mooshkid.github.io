@@ -3,10 +3,6 @@
     background: $turquoise;
     padding: 7rem 0;
 }
-.container {
-    max-width: 90%;
-    margin: 0 auto;
-}
 .profile-picture {
     text-align: center;
     position: relative;
@@ -21,9 +17,6 @@
     @include mq(tablet) {
         flex: 1;
     }
-}
-.col {
-    padding: 1rem 0;
 }
 .title-section {
     margin-bottom: 2rem;
@@ -43,7 +36,9 @@
     }
 }
 .about {
-    p, i, li {
+    p,
+    i,
+    li {
         color: #ffffff;
         text-shadow: 2px 2px 10px $secondary-color;
     }
@@ -59,10 +54,17 @@
         overflow: visible;
     }
 }
-.burst1, .burst2, .burst3, .burst4 {
+.burst1,
+.burst2,
+.burst3,
+.burst4 {
     opacity: 0;
-}  
-.bubble1, .bubble2, .bubble3, .bubble4, .bubbles {
+}
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubbles {
     fill: white;
     opacity: 0.8;
 }
@@ -93,7 +95,7 @@
     transition: color 0.3s;
 
     &:hover {
-        color: $primary-color;  /*fix later*/
+        color: $primary-color; /*fix later*/
     }
 
     @include mq(tablet) {

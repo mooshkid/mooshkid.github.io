@@ -14,7 +14,12 @@ body.stop-transition .nav-menu {
     transition: none !important;
 }
 
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
 .col {
+    padding: 1rem 0;
     @include mq(tablet) {
         flex: 1;
     }

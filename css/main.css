@@ -47,6 +47,14 @@ body.stop-transition .nav-menu {
   transition: none !important;
 }
 
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.col {
+  padding: 1rem 0;
+}
 @media (min-width: 768px) {
   .col {
     flex: 1;
@@ -668,11 +676,6 @@ header {
   padding: 7rem 0;
 }
 
-.container {
-  max-width: 90%;
-  margin: 0 auto;
-}
-
 .profile-picture {
   text-align: center;
   position: relative;
@@ -689,10 +692,6 @@ header {
   .profile-picture {
     flex: 1;
   }
-}
-
-.col {
-  padding: 1rem 0;
 }
 
 .title-section {
@@ -713,7 +712,9 @@ header {
   z-index: -1;
 }
 
-.about p, .about i, .about li {
+.about p,
+.about i,
+.about li {
   color: #ffffff;
   text-shadow: 2px 2px 10px hsl(220deg, 73%, 58%);
 }
@@ -730,11 +731,18 @@ header {
   overflow: visible;
 }
 
-.burst1, .burst2, .burst3, .burst4 {
+.burst1,
+.burst2,
+.burst3,
+.burst4 {
   opacity: 0;
 }
 
-.bubble1, .bubble2, .bubble3, .bubble4, .bubbles {
+.bubble1,
+.bubble2,
+.bubble3,
+.bubble4,
+.bubbles {
   fill: white;
   opacity: 0.8;
 }
