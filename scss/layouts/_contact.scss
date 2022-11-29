@@ -6,4 +6,9 @@
     background: #4e5da6;
     background: $tertiary-color;
     padding: 7rem 0;
+
+    p {
+        color: #ffffff;
+        text-shadow: 2px 2px 10px $secondary-color;
+    }
 }
