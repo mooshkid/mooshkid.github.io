@@ -31,6 +31,7 @@ img {
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
 }
 
 body {
@@ -721,7 +722,8 @@ header {
     flex: 2;
   }
 }
-.profile-text p {
+
+.about-me {
   margin-bottom: 3rem;
 }
 
@@ -823,6 +825,7 @@ header {
   justify-content: center;
   align-items: center;
   flex: 1;
+  gap: 3rem;
 }
 
 .skills-item {
@@ -853,8 +856,13 @@ header {
 
 #projects {
   background: hsl(220deg, 73%, 58%);
-  padding: 7rem 0;
+  padding: 3rem 0 7rem;
   color: #ffffff;
+}
+@media (min-width: 1024px) {
+  #projects {
+    padding: 7rem 0 calc(7rem + 60px);
+  }
 }
 
 .projects {
@@ -946,11 +954,16 @@ header {
 /* Contact Section*/
 .contact {
   background: linear-gradient(#4e5da6 50%, 90%, transparent);
-  padding: 7rem 0;
+  padding: 3rem 0 7rem;
 }
 .contact p {
   color: #ffffff;
   text-shadow: 2px 2px 10px hsl(220deg, 73%, 58%);
+}
+@media (min-width: 1024px) {
+  .contact {
+    padding: 7rem 0;
+  }
 }
 
 footer {

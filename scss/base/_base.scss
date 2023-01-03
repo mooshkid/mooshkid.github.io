@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: $fixed-header-height;
 }
 body {
     background-color: $white-smoke;

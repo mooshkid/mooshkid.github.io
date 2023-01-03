@@ -1,8 +1,11 @@
 // Projects Section
 #projects {
     background: $secondary-color;
-    padding: 7rem 0;
+    padding: 3rem 0 7rem;
     color: #ffffff;
+    @include mq(desktop) {
+        padding: 7rem 0 calc(7rem + 60px);
+    }
 }
 .projects {
     display: flex;

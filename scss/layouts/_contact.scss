@@ -4,10 +4,12 @@
 }
 .contact {
     background: linear-gradient($tertiary-color 50%, 90%, transparent);
-    padding: 7rem 0;
-
+    padding: 3rem 0 7rem;
     p {
         color: #ffffff;
         text-shadow: 2px 2px 10px $secondary-color;
+    }
+    @include mq(desktop) {
+        padding: 7rem 0;
     }
 }
