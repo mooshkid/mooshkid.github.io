@@ -691,7 +691,7 @@ header {
 .about i,
 .about li {
   color: #ffffff;
-  text-shadow: 2px 2px 10px hsl(220deg, 73%, 58%);
+  text-shadow: 2px 2px 5px hsl(220deg, 73%, 58%);
 }
 
 .profile-picture {
@@ -768,14 +768,16 @@ header {
   outline: none;
   cursor: pointer;
   padding: 1rem 2rem 1rem 0;
-  transition: color 0.3s;
+  position: relative;
+  transition: all 0.3s;
 }
 .tablinks:hover {
-  color: hsl(226deg, 81%, 56%); /*fix later*/
+  text-shadow: 2px 2px 5px hsl(332deg, 100%, 56%);
 }
 
 .tablinks.active {
   color: hsl(332deg, 100%, 56%);
+  text-shadow: 2px 2px 2px #f4ebe8;
   transition: color 0.9s;
 }
 
@@ -792,11 +794,12 @@ header {
 .tab .active::after {
   content: "";
   display: block;
-  border-bottom: 4px solid hsl(332deg, 100%, 56%);
+  border-bottom: 3px solid hsl(332deg, 100%, 56%);
   border-radius: 5px;
   width: 2rem;
-  position: relative;
-  bottom: -5px;
+  position: absolute;
+  bottom: 0.5rem;
+  box-shadow: 1px 1px 2px #f4ebe8;
 }
 
 .skills-row {
