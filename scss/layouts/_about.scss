@@ -90,12 +90,12 @@
     transition: all 0.3s;
 
     &:hover {
-        text-shadow: 2px 2px 5px $rose;
+        text-shadow: 2px 2px 0px $rose;
     }
 }
 .tablinks.active {
     color: $rose;
-    text-shadow: 2px 2px 2px $isabelline;
+    text-shadow: 2px 2px 0px $isabelline;
     transition: color 0.9s;
 }
 .tabcontent {

@@ -775,12 +775,12 @@ header {
   transition: all 0.3s;
 }
 .tablinks:hover {
-  text-shadow: 2px 2px 5px hsl(332deg, 100%, 56%);
+  text-shadow: 2px 2px 0px hsl(332deg, 100%, 56%);
 }
 
 .tablinks.active {
   color: hsl(332deg, 100%, 56%);
-  text-shadow: 2px 2px 2px #f4ebe8;
+  text-shadow: 2px 2px 0px #f4ebe8;
   transition: color 0.9s;
 }
 
