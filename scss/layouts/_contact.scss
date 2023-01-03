@@ -1,10 +1,9 @@
 /* Contact Section*/
 #contact {
-    height: 80vh; // fix
+    // height: 80vh; // fix
 }
 .contact {
-    background: #4e5da6;
-    background: $tertiary-color;
+    background: linear-gradient($tertiary-color 50%, 90%, transparent);
     padding: 7rem 0;
 
     p {

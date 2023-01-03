@@ -698,6 +698,9 @@ header {
   text-align: center;
   position: relative;
   margin-bottom: 2rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 .profile-picture img {
   height: 300px;
@@ -941,13 +944,8 @@ header {
 }
 
 /* Contact Section*/
-#contact {
-  height: 80vh;
-}
-
 .contact {
-  background: #4e5da6;
-  background: #4e5da6;
+  background: linear-gradient(#4e5da6 50%, 90%, transparent);
   padding: 7rem 0;
 }
 .contact p {
