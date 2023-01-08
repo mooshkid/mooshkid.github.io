@@ -684,13 +684,13 @@ header {
 }
 
 /* About Section */
-.about {
+#about {
   background: turquoise;
   padding: 7rem 0;
 }
-.about p,
-.about i,
-.about li {
+#about p,
+#about i,
+#about li {
   color: #ffffff;
   text-shadow: 2px 2px 5px hsl(220deg, 73%, 58%);
 }
@@ -952,16 +952,16 @@ header {
 }
 
 /* Contact Section*/
-.contact {
+#contact {
   background: #4e5da6;
   padding: 3rem 0;
 }
-.contact p {
+#contact p {
   color: #ffffff;
   text-shadow: 2px 2px 10px hsl(220deg, 73%, 58%);
 }
 @media (min-width: 1024px) {
-  .contact {
+  #contact {
     padding: 7rem 0;
   }
 }
