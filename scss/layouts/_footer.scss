@@ -4,6 +4,8 @@ footer {
     width: 100%;
     height: 100%;
     position: relative;
+    background: $tertiary-color;
+    z-index: 0;
 }
 .tentacles {
     background: url(../../assets/tentacles_bg.png);
@@ -25,7 +27,7 @@ footer {
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 75%;
     filter: drop-shadow(2px 4px 6px black);
 }
 

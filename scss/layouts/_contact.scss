@@ -3,8 +3,9 @@
     // height: 80vh; // fix
 }
 .contact {
-    background: linear-gradient($tertiary-color 50%, 90%, transparent);
-    padding: 3rem 0 7rem;
+    background: $tertiary-color;
+    // background: linear-gradient($tertiary-color 50%, 90%, transparent);
+    padding: 3rem 0;
     p {
         color: #ffffff;
         text-shadow: 2px 2px 10px $secondary-color;
