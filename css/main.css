@@ -759,6 +759,11 @@ footer {
   font-size: 2rem;
   color: #f3f3f3;
   text-shadow: 2px 2px 10px #000;
+  transition: all 0.3s ease-out;
+}
+.socials a:hover {
+  scale: 1.2;
+  text-shadow: 0 0 5px hsl(187deg, 100%, 50%);
 }
 
 .copyright {

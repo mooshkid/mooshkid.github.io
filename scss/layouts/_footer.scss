@@ -41,6 +41,11 @@ footer {
         font-size: 2rem;
         color: $white-smoke;
         text-shadow: 2px 2px 10px #000;
+        transition: all 0.3s ease-out;
+        &:hover {
+            scale: 1.2;
+            text-shadow: 0 0 5px $sky-blue-crayola;
+        }
     }
 }
 .copyright {
