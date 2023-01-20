@@ -60,6 +60,14 @@ header {
 }
 .nav-menu-link {
     padding: 20px;
+    color: get-color(secondary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+    &:hover,
+    &:focus {
+        color: get-color(rose);
+    }
 }
 .nav-backdrop {
     visibility: hidden;

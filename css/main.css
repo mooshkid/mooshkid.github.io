@@ -341,6 +341,13 @@ header {
 
 .nav-menu-link {
   padding: 20px;
+  color: hsl(220deg, 73%, 58%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: color 0.3s ease-in-out;
+}
+.nav-menu-link:hover, .nav-menu-link:focus {
+  color: hsl(332deg, 100%, 56%);
 }
 
 .nav-backdrop {
