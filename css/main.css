@@ -217,13 +217,7 @@ p {
 .wave4 use {
   -webkit-animation: right-wave 4s linear infinite;
           animation: right-wave 4s linear infinite;
-  fill: turquoise;
-}
-
-.wave5 use {
-  -webkit-animation: right-wave 10s linear infinite;
-          animation: right-wave 10s linear infinite;
-  fill: #f3f3f3;
+  fill: hsl(172deg, 80%, 53%);
 }
 
 @-webkit-keyframes left-wave {
@@ -433,7 +427,7 @@ header {
 
 /* About Section */
 #about {
-  background: turquoise;
+  background: hsl(172deg, 80%, 53%);
   padding: 7rem 0;
 }
 #about p,

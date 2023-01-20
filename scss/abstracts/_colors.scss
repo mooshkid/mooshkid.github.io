@@ -2,18 +2,11 @@
 
 //BLUE SHADES //
 $primary-color: hsl(226, 81%, 56%); //rgb(51, 94, 234); //#335eea;
-
-// $secondary-color: hsl(218, 51%, 56%); //rgb(84, 127, 200); //#547fc8;
 $secondary-color: hsl(220, 73%, 58%); //rgb(69, 121, 226); //#4579e2;
-
-// $tertiary-color: #3461c1;
 $tertiary-color: #4e5da6;
 
-// TURQUOISE SHADES //
-// $turquoise: hsl(172, 80%, 53%); //rgb(41, 231, 205); //#29E7CD;
-$turquoise: turquoise;
+$turquoise: hsl(172, 80%, 53%); //rgb(41, 231, 205); //#29E7CD;
 $sky-blue-crayola: hsl(187, 100%, 50%); //rgb(0, 226, 255); //#00E2FF;
-
 $rose: hsl(332, 100%, 56%); //rgb(255, 31, 135); //#ff1f87;
 
 // WHITE SHADES
@@ -32,13 +25,18 @@ $darken: 25;
 $colors: (
     primary: (
         base: $primary-color,
-        light: #e4efe7,
+        light: lighten($primary-color, $lighten),
         dark: darken($primary-color, $darken),
     ),
     secondary: (
         base: $secondary-color,
-        light: #fef6d7,
+        light: lighten($secondary-color, $lighten),
         dark: darken($secondary-color, $darken),
+    ),
+    tertiary: (
+        base: $tertiary-color,
+        light: lighten($tertiary-color, $lighten),
+        dark: darken($tertiary-color, $darken),
     ),
     gray: (
         base: $gray-color,
@@ -49,5 +47,16 @@ $colors: (
         base: $rose,
         light: lighten($rose, $lighten),
         dark: lighten($rose, $darken),
+    ),
+    turquiose: (
+        base: $turquoise,
+    ),
+    sky: (
+        base: $sky-blue-crayola,
+    ),
+    white: (
+        base: $white-smoke,
+        light: $ghost-white,
+        dark: $isabelline,
     ),
 );

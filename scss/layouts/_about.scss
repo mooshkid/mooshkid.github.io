@@ -1,6 +1,6 @@
 /* About Section */
 #about {
-    background: $turquoise;
+    background: get-color(turquiose);
     padding: 7rem 0;
 
     p,
@@ -83,12 +83,12 @@
     transition: all 0.3s;
 
     &:hover {
-        text-shadow: 2px 2px 0px $rose;
+        text-shadow: 2px 2px 0px get-color(rose);
     }
 }
 .tablinks.active {
-    color: $rose;
-    text-shadow: 2px 2px 0px $isabelline;
+    color: get-color(rose);
+    text-shadow: 2px 2px 0px get-color(white, dark);
     transition: color 0.9s;
 }
 .tabcontent {
@@ -104,12 +104,12 @@
         &::after {
             content: "";
             display: block;
-            border-bottom: 3px solid $rose;
+            border-bottom: 3px solid get-color(rose);
             border-radius: 5px;
             width: 2rem;
             position: absolute;
             bottom: 0.5rem;
-            box-shadow: 1px 1px 0px $isabelline;
+            box-shadow: 1px 1px 0px get-color(white, dark);
         }
     }
 }

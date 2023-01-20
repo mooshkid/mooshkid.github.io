@@ -3,7 +3,7 @@ html {
     scroll-padding-top: $fixed-header-height;
 }
 body {
-    background-color: $white-smoke;
+    background-color: get-color(white);
 }
 section {
     position: relative;
@@ -27,7 +27,7 @@ body.stop-transition .nav-menu {
     &::after {
         content: "";
         display: block;
-        border-bottom: 15px solid $rose;
+        border-bottom: 15px solid get-color(rose);
         border-radius: 10px;
         box-shadow: 2px 2px 10px hotpink;
         width: 8rem;

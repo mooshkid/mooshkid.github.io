@@ -5,13 +5,13 @@
     height: 60px;
     max-height: 60px;
     margin: 0;
-    z-index:1;
-    top:0;
-    position:relative;
-    left:0px;
-    float:left;
+    z-index: 1;
+    top: 0;
+    position: relative;
+    left: 0px;
+    float: left;
     background-color: transparent;
-    
+
     @include mq(tablet) {
         grid-column-start: 1;
         grid-column-end: 3;
@@ -20,31 +20,25 @@
 .wave1 {
     use {
         animation: left-wave 10s linear infinite;
-        fill: $rose;
+        fill: get-color(rose);
     }
 }
 .wave2 {
     use {
         animation: right-wave 8s linear infinite;
-        fill: $secondary-color;
+        fill: get-color(secondary);
     }
 }
 .wave3 {
     use {
         animation: left-wave 6s linear infinite;
-        fill: $tertiary-color;
+        fill: get-color(tertiary);
     }
 }
 .wave4 {
     use {
         animation: right-wave 4s linear infinite;
-        fill: $turquoise;
-    }
-}
-.wave5 {
-    use {
-        animation: right-wave 10s linear infinite;
-        fill: $white-smoke;
+        fill: get-color(turquiose);
     }
 }
 
@@ -72,11 +66,11 @@
     height: 60px;
     max-height: 60px;
     margin: 0;
-    z-index:1;
-    bottom:0;
-    position:absolute;
-    left:0px;
-    float:left;
+    z-index: 1;
+    bottom: 0;
+    position: absolute;
+    left: 0px;
+    float: left;
     background-color: transparent;
     .wave2 {
         use {

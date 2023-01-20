@@ -1,6 +1,6 @@
 /* Contact Section*/
 #contact {
-    background: $tertiary-color;
+    background: get-color(tertiary);
     // background: linear-gradient($tertiary-color 50%, 90%, transparent);
     padding: 3rem 0;
     p {

@@ -16,15 +16,15 @@
     }
 }
 .project {
-    background: $tertiary-color;
+    background: get-color(tertiary);
     border-radius: 10px;
     animation: glow 2s infinite alternate-reverse;
     @keyframes glow {
         from {
-            box-shadow: 0 0 10px $white-smoke;
+            box-shadow: 0 0 10px get-color(white);
         }
         to {
-            box-shadow: 0 0 15px $sky-blue-crayola;
+            box-shadow: 0 0 15px get-color(sky);
         }
     }
 
@@ -68,12 +68,12 @@
     }
 }
 .project-link {
-    color: $sky-blue-crayola;
+    color: get-color(sky);
     font-weight: bold;
     display: flex;
     gap: 0.5rem;
     transition: 0.3s;
     &:hover {
-        color: $rose;
+        color: get-color(rose);
     }
 }
