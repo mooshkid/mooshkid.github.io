@@ -8,9 +8,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #f3f3f3;
-    // border-bottom: 1px solid #dadada;
-    box-shadow: 0 1px 5px #dadada;
+    background-color: get-color(white);
+    box-shadow: 0 1px 5px get-color(gray, light);
     position: fixed;
     top: 0;
     left: 0;
@@ -35,13 +34,13 @@ header {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    background-color: #f3f3f3;
-    box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
+    background-color: get-color(white);
+    box-shadow: 0 0.5rem 1.5rem get-color(gray, light);
     padding-top: $fixed-header-height;
     right: 0;
     transform: translateX(100%);
-    transition: transform .3s ease-in;
-    
+    transition: transform 0.3s ease-in;
+
     @include mq(tablet) {
         position: relative;
         width: auto;
@@ -54,7 +53,7 @@ header {
 }
 .nav-menu.active {
     transform: translateX(0);
-    transition: transform .3s ease-out;
+    transition: transform 0.3s ease-out;
 }
 .nav-menu-list {
     margin: 20px;
@@ -67,7 +66,7 @@ header {
     position: fixed;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: $backdrop;
     opacity: 0;
     transition: opacity 300ms ease-in-out;
 }
