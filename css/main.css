@@ -697,6 +697,9 @@ header {
   display: flex;
   gap: 0.5rem;
   transition: 0.3s;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .project-link:hover {
   color: hsl(332deg, 100%, 56%);

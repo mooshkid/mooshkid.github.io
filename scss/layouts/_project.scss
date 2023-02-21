@@ -1,79 +1,80 @@
 // Projects Section
 #projects {
-    background: $secondary-color;
-    padding: 3rem 0 7rem;
-    color: #ffffff;
-    @include mq(desktop) {
-        padding: 7rem 0 calc(7rem + 60px);
-    }
+	background: $secondary-color;
+	padding: 3rem 0 7rem;
+	color: #ffffff;
+	@include mq(desktop) {
+		padding: 7rem 0 calc(7rem + 60px);
+	}
 }
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    @include mq(tablet) {
-        flex-direction: row;
-    }
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	@include mq(tablet) {
+		flex-direction: row;
+	}
 }
 .project {
-    background: get-color(tertiary);
-    border-radius: 10px;
-    animation: glow 2s infinite alternate-reverse;
-    @keyframes glow {
-        from {
-            box-shadow: 0 0 10px get-color(white);
-        }
-        to {
-            box-shadow: 0 0 15px get-color(sky);
-        }
-    }
+	background: get-color(tertiary);
+	border-radius: 10px;
+	animation: glow 2s infinite alternate-reverse;
+	@keyframes glow {
+		from {
+			box-shadow: 0 0 10px get-color(white);
+		}
+		to {
+			box-shadow: 0 0 15px get-color(sky);
+		}
+	}
 
-    @include mq(tablet) {
-        width: 45%;
-    }
-    @include mq(desktop) {
-        width: 30%;
-    }
+	@include mq(tablet) {
+		width: 45%;
+	}
+	@include mq(desktop) {
+		width: 30%;
+	}
 
-    .col {
-        padding: 1rem;
-        img {
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px white;
-            // object-fit: cover;
-        }
-    }
+	.col {
+		padding: 1rem;
+		img {
+			border-radius: 10px;
+			box-shadow: 2px 2px 10px white;
+			// object-fit: cover;
+		}
+	}
 }
 .project-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .project-info {
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.2rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.2rem;
 }
 .project-tags {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    li {
-        font-size: 0.9rem;
-        border-radius: 4px;
-        padding: 2px 5px;
-        background: $secondary-color;
-    }
+	display: flex;
+	gap: 0.5rem;
+	flex-wrap: wrap;
+	li {
+		font-size: 0.9rem;
+		border-radius: 4px;
+		padding: 2px 5px;
+		background: $secondary-color;
+	}
 }
 .project-link {
-    color: get-color(sky);
-    font-weight: bold;
-    display: flex;
-    gap: 0.5rem;
-    transition: 0.3s;
-    &:hover {
-        color: get-color(rose);
-    }
+	color: get-color(sky);
+	font-weight: bold;
+	display: flex;
+	gap: 0.5rem;
+	transition: 0.3s;
+	width: fit-content;
+	&:hover {
+		color: get-color(rose);
+	}
 }
